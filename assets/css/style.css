@@ -175,7 +175,6 @@ p {
 	font-size: 85%;
 	text-transform: uppercase;
 	z-index: 9999;
-    border-bottom: 1px solid #ccc;
 }
 .navbar-default {
 	box-shadow: none !important;
