@@ -84,7 +84,8 @@
                 <div class="row" id="posts-section">
                     <?php // Display blog posts on any page @ http://m0n.co/l
                     $temp = $wp_query; $wp_query = null;
-                    $wp_query = new WP_Query(); $wp_query->query('showposts=3' . '&paged='.$paged);
+                    $postsno = $kake_theme_option['blog-posts-number-of'];
+                    $wp_query = new WP_Query(); $wp_query->query('showposts=' . $postsno . '&paged='.$paged);
                     while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
                     <div class="col-md-4">
                         <div class="post-item">

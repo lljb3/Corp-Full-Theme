@@ -847,6 +847,19 @@ if (!class_exists('Redux_Framework_sample_config')) {
 					),
 					// Blog Posts Options
 					array(
+						'id' => 'blog-posts-number-of',
+						'type' => 'slider',
+						'title'	=> __('Number of Blog Posts', 'redux-framework-demo'),
+						'subtitle'	=> __('Set the number of blog posts to generate', 'redux-framework-demo'),
+						'desc'	=> __('Set in multiples of 3.', 'redux-framework-demo'),
+						'default' => 1,
+						'min' => 0,
+						'step' => 1,
+						'max' => 9,
+						'resolution' => 1,
+						'display_value' => 'text'
+					),					
+					array(
 						'id' => 'color-blog-posts-background',
 						'type'	=> 'background',
 						'output' => array('.home #content #posts-section .post-item'),
