@@ -315,7 +315,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'theme'	=> 	'chrome',
 						'title'	=> __('Custom Styles (CSS)', 'redux-framework-demo'),
 						'subtitle'	=> __('Inline CSS right before closing <strong>&lt;/head&gt;</strong>', 'redux-framework-demo'),
-						'desc'	=> __('', 'redux-framework-demo'),
+						'desc'	=> __('Important: CSS tags are already in, do not put style tags! This will break the header file!', 'redux-framework-demo'),
 						'default'	=> '',
 					),
 					array(
@@ -324,8 +324,8 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'mode'	=> 	'javascript',
 						'theme'	=> 	'chrome',
 						'title'	=> __('Custom Scripts (Google Analytics etc.)', 'redux-framework-demo'),
-						'subtitle'	=> __('Inline scripts right before closing <strong>&lt;/body&gt;</strong>', 'redux-framework-demo'),
-						'desc'	=> __('Use "jQuery" selector, instead of "$" shorthand.', 'redux-framework-demo'),
+						'subtitle'	=> __('Inline scripts right before closing <strong>&lt;/body&gt;</strong> in generated script tags.', 'redux-framework-demo'),
+						'desc'	=> __('Use "jQuery" selector, instead of "$" shorthand. Important: Do not put script tags! This will break the footer file!', 'redux-framework-demo'),
 						'default'	=> '',
 					),
 				)
@@ -537,6 +537,16 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'desc'	=> __('', 'redux-framework-demo'),
 						//'validate'	=> 'numeric',
 						'default'	=> 'info@yourcompany.com',
+					),
+					array(
+						'id'	=> 'site-header-chat',
+						'type'	=> 'ace_editor',
+						'mode'	=> 	'javascript',
+						'theme'	=> 	'chrome',
+						'title'	=> __('Header Chat', 'redux-framework-demo'),
+						'subtitle'	=> __('Inline scripts right before chat tag call in header.', 'redux-framework-demo'),
+						'desc'	=> __('Use "jQuery" selector, instead of "$" shorthand. Important: Do not put script tags! This will break the footer file!', 'redux-framework-demo'),
+						'default'	=> '',
 					),
 				)
             );

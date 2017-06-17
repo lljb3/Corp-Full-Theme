@@ -4,6 +4,8 @@
 	if ( !empty( $kake_theme_option['logo-menu'] ) ) {
 		$logo = $kake_theme_option['logo-menu']['url'];
 	}
+    $chat = $kake_theme_option['site-header-chat'];
+    $phone = $kake_theme_option['site-header-phone'];
 ?>
 
 <!-- Header Information -->
@@ -34,6 +36,13 @@
 								'walker'		 => new wp_bootstrap_navwalker()
                             )
                         ); ?>
+                        <?php if( !empty( $chat ) ) { 
+                            echo '<script type="text/javascript">' . $chat . '</script>';
+                            echo '<li class="menu-chat"><i class="fa fa-comments-o" aria-hidden="true"></i></li>'; 
+                        } ?>
+                        <?php if( !empty( $phone ) ) { 
+                            echo '<li class="menu-phone"><a class="fa fa-mobile" aria-hidden="true" href="tel:' . $phone . '"></a></li>'; 
+                        } ?>
                     <!-- end .collapse --></div>
                 <!-- end .menu --></div>
                 <!-- Small Menu -->
