@@ -120,18 +120,25 @@
 	function tt_custom_styles() {
 		global $kake_theme_option;
 		$opacity = $kake_theme_option['opacity-slider'];
+		// Content Buttons
 		$btn_bg = $kake_theme_option['color-content-link'];
-		$btn_text = $kake_theme_option['color-content-link'];
 		$btn_bg_hover = $kake_theme_option['color-content-link'];
+		$btn_text = $kake_theme_option['color-content-link'];
 		$btn_text_hover = $kake_theme_option['color-button-text'];
+		// Read More Buttons
+		$read_more_bg = $kake_theme_option['color-blog-posts-read-more-bg'];
+		$read_more_bg_hover = $kake_theme_option['color-blog-posts-read-more-bg-hover'];
+		$read_more_text = $kake_theme_option['color-blog-posts-read-more-text'];
+		$read_more_text_hover = $kake_theme_option['color-blog-posts-read-more-text-hover'];
+		// Custom Styles
 		$custom_styles = $kake_theme_option['custom-styles'];
 		$style_type = 'type="text/css"';
 		
 		echo '<style '. $style_type .'>';
 			// Add any extra styles here if needed.
 			echo '.jumbotron .slider { opacity: '. $opacity .' }';
-			echo '.home #content #posts-section .read-more { border-color: '. $btn_bg .'; color: '. $btn_text .' }';
-			echo '.home #content #posts-section .read-more:hover { background-color: '. $btn_bg_hover .'; color: '. $btn_text_hover .' }';
+			echo '.home #content #posts-section .read-more { border-color: '. $read_more_bg .'; color: '. $read_more_text .' }';
+			echo '.home #content #posts-section .read-more:hover { background-color: '. $read_more_bg_hover .'; color: '. $read_more_text_hover .' }';
 			echo $custom_styles;
 		echo '</style>';
 	}

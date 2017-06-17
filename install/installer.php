@@ -75,6 +75,11 @@
 				'required'  => true,
 			),
 			array(
+				'name'      => 'WooCommerce',
+				'slug'      => 'woocommerce',
+				'required'  => false,
+			),
+			array(
 				'name'      => 'Redux Framework',
 				'slug'      => 'redux-framework',
 				'required'  => true,
