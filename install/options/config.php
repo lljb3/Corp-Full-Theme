@@ -577,9 +577,38 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'display_value' => 'text'
 					),
 					array(
+						'id'	=> 'jumbotron-headers',
+						'type'	=> 'typography',
+						'title'	=> __('Jumbotron Header', 'redux-framework-demo'),
+						'google'	=> true,
+						'fonts'		=> $custom_fonts,
+						'ext-font-css' => $theme_url . '/style.css',
+						'font-backup'	=> false,
+						'font-style'	=> true,
+						'font-weight'	=> true,
+						'text-align'	=> true,
+						//'subsets'	=> false, // Only appears if google is true and subsets not set to false
+						'font-size'	=> true,
+						'line-height'	=> true,
+						'word-spacing'	=> true, // Defaults to false
+						'letter-spacing' => true, // Defaults to false
+						'color'	=> true,
+						//'preview'	=> false, // Disable the previewer
+						'all_styles' => false, // Enable all Google Font style/weight variations to be added to the page
+						'output' => array('.jumbotron h1,.jumbotron h2,.jumbotron h3,.jumbotron h4,.jumbotron h5,.jumbotron h6'), // An array of CSS selectors to apply this font style to dynamically
+						'units'	=> 'em', // Defaults to px
+						'subtitle'	=> __('', 'redux-framework-demo'),
+						'default'	=> array(
+							'font-family'	=> 'Open Sans',
+							'font-style'	=> '400',
+							'google'	=> true,
+							'color'	=> '#666'
+						),
+					),
+					array(
 						'id'	=> 'jumbotron-text',
 						'type'	=> 'typography',
-						'output'	=> array('.jumbotron,.jumbotron p'),
+						'output'	=> array('.jumbotron,.jumbotron p,.jumbotron .slider-text'),
 						'title'	=> __('Jumbotron Text', 'redux-framework-demo'),
 						'google'	=> true,
 						'fonts'		=> $custom_fonts,
@@ -596,7 +625,6 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'color'	=> true,
 						//'preview'	=> false, // Disable the previewer
 						'all_styles' => false, // Enable all Google Font style/weight variations to be added to the page
-						'output' => array('.jumbotron .slider-text'), // An array of CSS selectors to apply this font style to dynamically
 						'units'	=> 'em', // Defaults to px
 						'subtitle'	=> __('', 'redux-framework-demo'),
 						'default'	=> array(
