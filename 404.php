@@ -15,7 +15,7 @@
 <div class="container-fluid" id="content">
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
-			<h2>You have reached a missing page!</h2>
+			<h1 class="has-title">You have reached a missing page!</h1>
             <p>Please return to the previous link by clicking <a href="javascript:history.back()">here</a>.</p>
         <!-- end .col-md-10 --></div>
     <!-- end .row --></div>
