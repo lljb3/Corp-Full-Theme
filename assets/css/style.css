@@ -223,6 +223,15 @@ p {
 #header-menu .dropdown-menu {
     border: none !important;
 	border-radius: 0px !important;
+	transition: .2s ease-in-out all;
+}
+#header-menu .dropdown:hover .dropdown-menu {
+	display: block;
+	margin-top: 0;
+	transition: .2s ease-in-out all;
+}
+#header-menu .dropdown-menu li:hover .sub-menu {
+    visibility: visible;
 }
 #header-menu .dropdown-menu li a {
 	padding: 5px .65em !important;
