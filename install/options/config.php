@@ -282,7 +282,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'desc'      => __('Image will be displayed at 50% width & height for Retina-Ready purpose. For example: 300x60 image shows at 150x30. <br /> Also, Max. height: 50px. Upload your logo accordingly.', 'redux-framework-demo'),
 						'subtitle'  => __('', 'redux-framework-demo'),
 					),
-						array(
+					array(
 						'id'        => 'logo-login',
 						'type'      => 'media',
 						'title'     => __('WordPress Login Page - Logo', 'redux-framework-demo'),
@@ -710,6 +710,31 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'transparent'	=> false,
 						'background-size'	=> false,
 					),
+					// Scroll Down Button
+					array(
+						'id' => 'scroll-down-icon-image',
+						'type'      => 'media',
+						'title'     => __('Scroll Down Icon Image', 'redux-framework-demo'),
+						'compiler'  => 'true',
+						'mode'      => false, // Can be set to false to allow any media type, or can also be set to any mime type.
+						'desc'      => __('Max. dimension: 42x42', 'redux-framework-demo'),
+						'subtitle'  => __('An image version of a scroll down button. Overrides the icon option if filled out.', 'redux-framework-demo'),
+					),
+					array(
+						'id' => 'scroll-down-icon-html',
+						'type' => 'text',
+						'validate' => 'css',
+						'title' => __('Scroll Down Icon', 'redux-framework-demo'),
+						'subtitle'  => __('A icon version of a scroll down button. Will be overridden by the image version.', 'redux-framework-demo'),
+						'desc' => __('eg: fa fa-mouse', 'redux-framework-demo'),
+					),
+					array(
+						'id' => 'scroll-down-text',
+						'type' => 'text',
+						'validate' => 'html',
+						'title' => __('Scroll Down Text', 'redux-framework-demo'),
+						'subtitle'  => __('Text that denotes scroll down. Can say anything if needed from site design.', 'redux-framework-demo'),
+					),			
 				)
 			);
 

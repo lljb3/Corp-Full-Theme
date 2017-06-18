@@ -58,7 +58,16 @@
         ?>
             <a href="<?php echo $sliderlink; ?>" class="btn btn-lg button-success"><?php echo $sliderbutton; ?></a>
         <?php } ?>
-        <div class="down-arrow"><a href="#content" data-scroll><span class="glyphicon glyphicon-triangle-bottom"></span></a></div>
+        <div class="down-arrow">
+            <?php if( $scrdwnimg ) { ?>
+                <a href="#content" data-scroll><img src="<?php $scrdwnimg ?>" alt="" /></a>
+            <?php } elseif( $scrdwnicon ) { ?>
+                <a href="#content" data-scroll><span class="<?php $scrdwnicon ?>"></span></a>
+            <?php } if( $scrdwntxt ) { ?>
+                <span class="scroll-text"><?php $scrdwntxt; ?></span>
+            <?php } ?>
+        </div>
+
     <!-- end .slider-text --></div>
     <div class="slider">
         <?php $slidername = get_post_meta($post->ID, "layer_slider_post_class", true); ?>
