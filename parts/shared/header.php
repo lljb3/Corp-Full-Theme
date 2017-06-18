@@ -36,13 +36,15 @@
 								'walker'		 => new wp_bootstrap_navwalker()
                             )
                         ); ?>
-                        <?php if( !empty( $chat ) ) { 
-                            echo '<script type="text/javascript">' . $chat . '</script>';
-                            echo '<li class="menu-chat"><i class="fa fa-comments-o" aria-hidden="true"></i></li>'; 
-                        } ?>
-                        <?php if( !empty( $phone ) ) { 
-                            echo '<li class="menu-phone"><a class="fa fa-mobile" aria-hidden="true" href="tel:' . $phone . '"></a></li>'; 
-                        } ?>
+                        <ul class="navbar-nav nav">
+                            <?php if( !empty( $chat ) ) { 
+                                echo '<script type="text/javascript">' . $chat . '</script>';
+                                echo '<li class="menu-chat"><i class="fa fa-comments-o" aria-hidden="true"></i></li>'; 
+                            } ?>
+                            <?php if( !empty( $phone ) ) { 
+                                echo '<li class="menu-phone"><a class="fa fa-mobile" aria-hidden="true" href="tel:' . $phone . '"></a></li>'; 
+                            } ?>
+                        <!-- end .navbar-nav --></ul>
                     <!-- end .collapse --></div>
                 <!-- end .menu --></div>
                 <!-- Small Menu -->
