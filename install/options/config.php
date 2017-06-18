@@ -352,7 +352,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 					array(
 						'id'   => 'color-trans-header-border',
 						'type' => 'color',
-						'hidden' => ($kakeoptions['transitional-header-button'] != 1) ? true : false,
+						'hidden' => ($kakeoptions['transitional-header-button'] == 0) ? true : false,
 						'title' => __('Trans Header Border Color', 'redux-framework-demo'),
 						'subtitle' => __('Change Header Border Color'),
 						'desc'	=> __('', 'redux-framework-demo'),
@@ -362,7 +362,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 					array(
 						'id'   => 'color-trans-header-background',
 						'type' => 'background',
-						'hidden' => ($kakeoptions['transitional-header-button'] != 1) ? true : false,
+						'hidden' => ($kakeoptions['transitional-header-button'] == 0) ? true : false,
 						'title' => __('Trans Header Background Color', 'redux-framework-demo'),
 						'subtitle' => __('Change Header Background Color'),
 						'output' => array('#trans-menu.large'),
@@ -377,7 +377,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 					array(
 						'id'	=> 'color-trans-header',
 						'type'	=> 'color',
-						'hidden' => ($kakeoptions['transitional-header-button'] != 1) ? true : false,
+						'hidden' => ($kakeoptions['transitional-header-button'] == 0) ? true : false,
 						'title'	=> __('Site Header Color', 'redux-framework-demo'), 
 						'subtitle'	=> __('Site Header Color (default: #ffffff)', 'redux-framework-demo'),
 						'default'	=> '#ffffff',
@@ -388,7 +388,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 					array(
 						'id'	=> 'typography-header',
 						'type'	=> 'typography',
-						'hidden' => ($kakeoptions['transitional-header-button'] != 1) ? true : false,
+						'hidden' => ($kakeoptions['transitional-header-button'] == 0) ? true : false,
 						'title'	=> __('Typography Header', 'redux-framework-demo'),
 						'google'	=> true,
 						'fonts'		=> $custom_fonts,
@@ -418,7 +418,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 					array(
 						'id'	=> 'color-trans-header-link',
 						'type'	=> 'color',
-						'hidden' => ($kakeoptions['transitional-header-button'] != 1) ? true : false,
+						'hidden' => ($kakeoptions['transitional-header-button'] == 0) ? true : false,
 						'title'	=> __('Site Header Link Color', 'redux-framework-demo'),
 						'output'	=> array('#trans-menu.large a,#trans-menu.large a:visited,#trans-menu.large a:focus'),
 						'subtitle'	=> __('Site Header Link Color (default: #70b9a0)', 'redux-framework-demo'),
@@ -429,7 +429,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 					array(
 						'id'	=> 'color-trans-header-link-hover',
 						'type'	=> 'color',
-						'hidden' => ($kakeoptions['transitional-header-button'] != 1) ? true : false,
+						'hidden' => ($kakeoptions['transitional-header-button'] == 0) ? true : false,
 						'title'	=> __('Site Content Hover Link Color', 'redux-framework-demo'), 
 						'output'	=> array('#trans-menu.large a:hover,#trans-menu.large a:active'),
 						'subtitle'	=> __('Site Content Hover Link Color (default: #70b9a0)', 'redux-framework-demo'),
@@ -441,7 +441,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 					array(
 						'id'   => 'color-header-border',
 						'type' => 'color',
-						'hidden' => ($kakeoptions['transitional-header-button'] != 1) ? true : false,
+						'hidden' => ($kakeoptions['transitional-header-button'] == 0) ? true : false,
 						'title' => __('Header Border', 'redux-framework-demo'),
 						'subtitle' => __('Header Border'),
 						'desc'	=> __('', 'redux-framework-demo'),
@@ -874,6 +874,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 					array(
 						'id' => 'blog-posts-number-of',
 						'type' => 'slider',
+						'hidden' => ($kakeoptions['content-posts-container'] == 0) ? true : false,
 						'title'	=> __('Number of Blog Posts', 'redux-framework-demo'),
 						'subtitle'	=> __('Set the number of blog posts to generate', 'redux-framework-demo'),
 						'desc'	=> __('Set in multiples of 3.', 'redux-framework-demo'),
@@ -888,7 +889,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'id' => 'color-blog-posts-background',
 						'type'	=> 'background',
 						'output' => array('.home #content #posts-section .post-item'),
-						'hidden' => ($kakeoptions['content-posts-container'] != 1) ? true : false,
+						'hidden' => ($kakeoptions['content-posts-container'] == 0) ? true : false,
 						'title'	=> __('Blog Post Background', 'redux-framework-demo'),
 						'subtitle'	=> __('Handles all button colors (default: #333)', 'redux-framework-demo'),
 						'default'	=> array( 'background-color' => '#333' ),
@@ -903,7 +904,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'id' => 'color-blog-posts-read-more-bg',
 						'type'	=> 'background',
 						'output' => array('.home #content #posts-section .post-item'),
-						'hidden' => ($kakeoptions['content-posts-container'] != 1) ? true : false,
+						'hidden' => ($kakeoptions['content-posts-container'] == 0) ? true : false,
 						'title'	=> __('Read More Button Background', 'redux-framework-demo'),
 						'subtitle'	=> __('Handles read more button colors (default: #333)', 'redux-framework-demo'),
 						'default'	=> array( 'background-color' => '#333' ),
@@ -918,7 +919,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'id' => 'color-blog-posts-read-more-bg-hover',
 						'type'	=> 'background',
 						'output' => array('.home #content #posts-section .post-item'),
-						'hidden' => ($kakeoptions['content-posts-container'] != 1) ? true : false,
+						'hidden' => ($kakeoptions['content-posts-container'] == 0) ? true : false,
 						'title'	=> __('Read More Button Hover Background', 'redux-framework-demo'),
 						'subtitle'	=> __('Handles read more hover button colors (default: #333)', 'redux-framework-demo'),
 						'default'	=> array( 'background-color' => '#333' ),
@@ -932,6 +933,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 					array(
 						'id' => 'color-blog-posts-read-more-text',
 						'type'	=> 'color',
+						'hidden' => ($kakeoptions['content-posts-container'] == 0) ? true : false,
 						'title'	=> __('Read More Button Link Color', 'redux-framework-demo'), 
 						'subtitle'	=> __('Handles read more button text colors (default: #f8f8f8)', 'redux-framework-demo'),
 						'default'	=> '#f8f8f8',
@@ -941,6 +943,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 					array(
 						'id' => 'color-blog-posts-read-more-text-hover',
 						'type'	=> 'color',
+						'hidden' => ($kakeoptions['content-posts-container'] == 0) ? true : false,
 						'title'	=> __('Read More Button Hover Link Color', 'redux-framework-demo'), 
 						'subtitle'	=> __('Handles read more hover button text colors (default: #f8f8f8)', 'redux-framework-demo'),
 						'default'	=> '#f8f8f8',
