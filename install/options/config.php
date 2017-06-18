@@ -352,7 +352,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 					array(
 						'id'   => 'color-trans-header-border',
 						'type' => 'color',
-						'hidden' => ($kakeoptions['transitional-header-button'] == 1) ? true : false,
+						'hidden' => ($kakeoptions['transitional-header-button'] == 1) ? true : true,
 						'title' => __('Trans Header Border Color', 'redux-framework-demo'),
 						'subtitle' => __('Change Header Border Color'),
 						'desc'	=> __('', 'redux-framework-demo'),
@@ -362,7 +362,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 					array(
 						'id'   => 'color-trans-header-border',
 						'type' => 'background',
-						'hidden' => ($kakeoptions['transitional-header-button'] == 1) ? true : false,
+						'hidden' => ($kakeoptions['transitional-header-button'] == 1) ? true : true,
 						'title' => __('Trans Header Background Color', 'redux-framework-demo'),
 						'subtitle' => __('Change Header Background Color'),
 						'output' => array('#trans-menu.large'),
