@@ -903,7 +903,6 @@ if (!class_exists('Redux_Framework_sample_config')) {
 					array(
 						'id' => 'color-blog-posts-read-more-bg',
 						'type'	=> 'background',
-						'output' => array('.home #content #posts-section .post-item'),
 						//'hidden' => ($kakeoptions['content-posts-container'] == 0) ? true : false,
 						'title'	=> __('Read More Button Background', 'redux-framework-demo'),
 						'subtitle'	=> __('Handles read more button colors (default: #333)', 'redux-framework-demo'),
@@ -918,7 +917,6 @@ if (!class_exists('Redux_Framework_sample_config')) {
 					array(
 						'id' => 'color-blog-posts-read-more-bg-hover',
 						'type'	=> 'background',
-						'output' => array('.home #content #posts-section .post-item'),
 						//'hidden' => ($kakeoptions['content-posts-container'] == 0) ? true : false,
 						'title'	=> __('Read More Button Hover Background', 'redux-framework-demo'),
 						'subtitle'	=> __('Handles read more hover button colors (default: #333)', 'redux-framework-demo'),
