@@ -766,7 +766,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'indent' => true,
 					),
 					array(
-						'id' => 'scroll-down-icon-image',
+						'id' => 'scroll-down-icon-image', 
 						'type'      => 'media',
 						'title'     => __('Scroll Down Icon Image', 'redux-framework-demo'),
 						'compiler'  => 'true',

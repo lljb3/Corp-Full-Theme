@@ -434,7 +434,7 @@ p {
 /* Down Arrow */
 .jumbotron .down-arrow {
 	width: 100%;
-    height: 50px;
+    height: 75px;
     left: 0;
     position: fixed;
     bottom: 0;
@@ -444,32 +444,6 @@ p {
 }
 .down-arrow a {
 	background: none !important;
-}
-.down-arrow .glyphicon {
-	width: 50px;
-    height: 50px;
-    left: 0;
-    margin-top: 0;
-    margin-left: 0;
-    text-align: center;
-    font-size: 30px;
-    z-index: 1;
-}
-.down-arrow .glyphicon:before {
-    width: 50px;
-    height: 50px;
-	line-height: 140%;
-    -webkit-transition: all .2s linear 0s;
-    -moz-transition: all .2s linear 0s;
-    -o-transition: all .2s linear 0;
-    transition: all .2s linear 0s;
-}
-.down-arrow:hover .glyphicon:before {
-	line-height: 160%;
-    -webkit-transition: all .2s linear 0s;
-    -moz-transition: all .2s linear 0s;
-    -o-transition: all .2s linear 0;
-    transition: all .2s linear 0s;
 }
 /* Media Queries */
 @media screen and (max-width:768px) {

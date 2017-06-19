@@ -59,13 +59,13 @@
             <a href="<?php echo $sliderlink; ?>" class="btn btn-lg button-success"><?php echo $sliderbutton; ?></a>
         <?php } ?>
         <div class="down-arrow">
-            <?php $scrdwnimg = $kake_theme_option['scroll-down-icon-image']; $scrdwnicon = $kake_theme_option['scroll-down-icon-html']; $scrdwntxt = $kake_theme_option['scroll-down-text']; ?>
-            <?php if( !empty( $scrdwnimg ) ) { ?>
+            <?php $scrdwnimg = $kake_theme_option['scroll-down-icon-image']['url']; $scrdwnicon = $kake_theme_option['scroll-down-icon-html']; $scrdwntxt = $kake_theme_option['scroll-down-text']; ?>
+            <?php if( !empty( $scrdwnimg ) && empty( $scrdwnicon ) ) { ?>
                 <a href="#content" data-scroll><img src="<?php echo $scrdwnimg ?>" alt="" /></a>
             <?php } elseif( !empty( $scrdwnicon ) ) { ?>
                 <a href="#content" data-scroll><i class="<?php echo $scrdwnicon ?>"></i></a>
             <?php } if( !empty( $scrdwntxt ) ) { ?>
-                <span class="scroll-text"><?php echo $scrdwntxt; ?></span>
+                <br /><span class="scroll-text"><?php echo $scrdwntxt; ?></span>
             <?php } ?>
         </div>
 
