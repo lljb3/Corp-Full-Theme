@@ -223,7 +223,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 			============================== */
             $this->sections[] = array(
 	            'title'		=> __('General', 'redux-framework-demo'),
-	            'desc'		=> __('', 'redux-framework-demo'),
+	            'desc'		=> __('The basic site setup. Please fill all fields out.', 'redux-framework-demo'),
 	            'icon'		=> 'fa fa-cog',
 	            'fields'	=> array(
 					array(
@@ -337,7 +337,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 			$kakeoptions = get_option('kake_theme_option');
 			$this->sections[] = array(
 	            'title'     => __('Header', 'redux-framework-demo'),
-	            'desc'      => __('', 'redux-framework-demo'),
+	            'desc'      => __('The header. Make sure to double check every section.', 'redux-framework-demo'),
 	            'icon'      => 'fa fa-bars',
 				'fields'	=> array(
 					array(
@@ -590,6 +590,11 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'desc'	=> __('Use "jQuery" selector, instead of "$" shorthand. Important: Do not put script tags! This will break the footer file!', 'redux-framework-demo'),
 						'default'	=> '',
 					),
+					array(
+						'id'     => 'section-end',
+						'type'   => 'section',
+						'indent' => false,
+					),
 				)
             );
                         
@@ -742,7 +747,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'id' => 'color-jumbotron-button-background-hover',
 						'type'	=> 'background',
 						'output'	=> array('.jumbotron .slider-text a:hover,.jumbotron .slider-text a:active'),
-						'title'	=> __('Button Background Hover', 'redux-framework-demo'),
+						'title'	=> __('Jumbotron Button Background Hover', 'redux-framework-demo'),
 						'subtitle'	=> __('Handles all button color hovers if you want a button style (default: #242424)', 'redux-framework-demo'),
 						'default'	=> array( 'background-color' => '#242424' ),
 						'background-repeat'	=> false,
@@ -751,11 +756,6 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'background-image'	=> false,
 						'transparent'	=> false,
 						'background-size'	=> false,
-					),
-					array(
-						'id'     => 'section-end',
-						'type'   => 'section',
-						'indent' => false,
 					),
 					// Scroll Down Button
 					array(
@@ -788,7 +788,12 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'validate' => 'html',
 						'title' => __('Scroll Down Text', 'redux-framework-demo'),
 						'subtitle'  => __('Text that denotes scroll down. Can say anything if needed from site design.', 'redux-framework-demo'),
-					),			
+					),
+					array(
+						'id'     => 'section-end',
+						'type'   => 'section',
+						'indent' => false,
+					),
 				)
 			);
 
@@ -1065,6 +1070,11 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'validate'	=> 'color',
 						'transparent'	=> false,
 					),
+					array(
+						'id'     => 'section-end',
+						'type'   => 'section',
+						'indent' => false,
+					),
 				),
 			);
             
@@ -1073,7 +1083,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 			============================== */
             $this->sections[] = array(
 	            'title'     => __('Footer', 'redux-framework-demo'),
-	            'desc'      => __('', 'redux-framework-demo'),
+	            'desc'      => __('The footer info. Make sure to fill every option.', 'redux-framework-demo'),
 	            'icon'      => 'fa fa-anchor',
 	            'fields'    => array(
 					array(

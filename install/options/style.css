@@ -55,8 +55,9 @@ fieldset {
 }
 
 /* Font Info */
+@import '../../assets/css/plugins.min.css';
 .fa {
-	font-family: FontAwesome !important;
+	font-family: 'FontAwesome' !important;
 }
 .el {
 	font-family: 'Elusive-Icons' !important;
