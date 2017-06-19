@@ -1193,34 +1193,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 					),
 				)
 			);
-	          						
-	        /* ==============================
-				Users
-			============================== */
-            $this->sections[] = array(
-				'icon'	=> 'fa fa-users',
-				'title'	=> __('Users', 'redux-framework-demo'),
-				'desc' 	=> __('', 'redux-framework-demo'),
-				'fields'	=> array(
-					array(
-						'id'	=> 'profile-page',
-						'type'	=> 'select',
-						'data'	=> 'pages',
-						'title'	=> __('Profile Page', 'redux-framework-demo'),
-						'subtitle'	=> __('', 'redux-framework-demo'),
-						'desc'	=> __('Select the page you assigned the page template "User - Profile" to.', 'redux-framework-demo'),
-					),
-					array(
-						'id'	=> 'favorites-page',
-						'type'	=> 'select',
-						'data'	=> 'pages',
-						'title'	=> __('Favorites Page', 'redux-framework-demo'),
-						'subtitle'	=> __('', 'redux-framework-demo'),
-						'desc'	=> __('Select the page you assigned the page template "User - Favorites" to.', 'redux-framework-demo'),
-					),
-				)
-			);
-
+	        
             if (file_exists(trailingslashit(dirname(__FILE__)) . 'README.html')) {
                 $tabs['docs'] = array(
                     'icon'	=> 'el-icon-book',
