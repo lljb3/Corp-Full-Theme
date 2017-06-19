@@ -356,12 +356,19 @@ if (!class_exists('Redux_Framework_sample_config')) {
 					// Trans Header Options
 					array(
 						'id'   => 'color-trans-header-border',
-						'type' => 'color',
+						'type' => 'border',
 						'title' => __('Trans Header Border Color', 'redux-framework-demo'),
 						'subtitle' => __('Change Header Border Color'),
 						'desc'	=> __('', 'redux-framework-demo'),
 						'output' => array('#trans-menu.large'),
-						'default' => array('border-bottom-color' => '#c8c8c8'),
+						'default'  => array(
+							'border-color'  => '#c8c8c8', 
+							'border-style'  => 'solid', 
+							'border-top'    => '0px', 
+							'border-right'  => '0px', 
+							'border-bottom' => '1px', 
+							'border-left'   => '0px'
+						),
 					),
 					array(
 						'id'   => 'color-trans-header-background',
@@ -370,7 +377,6 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'title' => __('Trans Header Background Color', 'redux-framework-demo'),
 						'subtitle' => __('Change Header Background Color'),
 						'output' => array('#trans-menu.large'),
-						'default' => array('border-bottom-color' => '#c8c8c8'),
 						'background-repeat'	=> false,
 						'background-attachment'	=> false,
 						'background-position'	=> false,
@@ -445,12 +451,19 @@ if (!class_exists('Redux_Framework_sample_config')) {
 					),
 					array(
 						'id'   => 'color-header-border',
-						'type' => 'color',
+						'type' => 'border',
 						'title' => __('Header Border', 'redux-framework-demo'),
 						'subtitle' => __('Header Border'),
 						'desc'	=> __('', 'redux-framework-demo'),
 						'output' => array('#trans-menu.small, header .navbar, header .navbar .navbar-nav > ul > li ul.sub-menu, header .navbar nav > div > ul > li ul.sub-menu, #header-menu, #trans-menu.small, header .dropdown-menu'),
-						'default' => array('border-bottom-color' => '#c8c8c8'),
+						'default'  => array(
+							'border-color'  => '#c8c8c8', 
+							'border-style'  => 'solid', 
+							'border-top'    => '0px', 
+							'border-right'  => '0px', 
+							'border-bottom' => '1px', 
+							'border-left'   => '0px'
+						),
 					),
 					array(
 						'id'	=> 'color-header-background',
