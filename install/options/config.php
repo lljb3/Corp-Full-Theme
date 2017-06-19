@@ -369,6 +369,8 @@ if (!class_exists('Redux_Framework_sample_config')) {
 							'border-bottom' => '1px', 
 							'border-left'   => '0px'
 						),
+						'all' => false,
+						'validate' => 'color',						
 					),
 					array(
 						'id'   => 'color-trans-header-background',
@@ -464,6 +466,8 @@ if (!class_exists('Redux_Framework_sample_config')) {
 							'border-bottom' => '1px', 
 							'border-left'   => '0px'
 						),
+						'all' => false,
+						'validate' => 'color',						
 					),
 					array(
 						'id'	=> 'color-header-background',
