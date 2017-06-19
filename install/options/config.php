@@ -1004,6 +1004,11 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'validate'	=> 'color',
 						'transparent'	=> false,
 					),
+					array(
+						'id'     => 'section-end',
+						'type'   => 'section',
+						'indent' => false,
+					),
 					// Button Options
 					array(
 						'id'   =>'section-start',
