@@ -342,7 +342,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 				'fields'	=> array(
 					array(
 						'id'   =>'divider-button-options',
-						'desc' => __('Change transitional header options here!', 'redux-framework-demo'),
+						'title' => __('Transitional Header Options', 'redux-framework-demo'),
 						'type' => 'divide'
 					),
 					array(
@@ -440,7 +440,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 					// Header Options
 					array(
 						'id'   =>'divider-button-options',
-						'desc' => __('Change header options here!', 'redux-framework-demo'),
+						'title' => __('Header Options', 'redux-framework-demo'),
 						'type' => 'divide'
 					),
 					array(
@@ -535,7 +535,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 					),
 					array(
 						'id'   =>'divider-button-options',
-						'desc' => __('Change contact options here!', 'redux-framework-demo'),
+						'title' => __('Contact Options', 'redux-framework-demo'),
 						'type' => 'divide'
 					),
 					array(
@@ -722,7 +722,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 					// Scroll Down Button
 					array(
 						'id'   =>'divider-button-options',
-						'desc' => __('Change scroll down button options here!', 'redux-framework-demo'),
+						'title' => __('Scroll Down Button Options', 'redux-framework-demo'),
 						'type' => 'divide'
 					),
 					array(
@@ -878,7 +878,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 	            'fields' => array(
 					array(
 						'id'   =>'divider-button-options',
-						'desc' => __('Change blog post options here!', 'redux-framework-demo'),
+						'title' => __('Blog Post Options', 'redux-framework-demo'),
 						'type' => 'divide'
 					),
 					array(
@@ -965,7 +965,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 					// Button Options
 					array(
 						'id'   =>'divider-button-options',
-						'desc' => __('Change button options here!', 'redux-framework-demo'),
+						'title' => __('Button Options', 'redux-framework-demo'),
 						'type' => 'divide'
 					),
 					array(
