@@ -341,9 +341,11 @@ if (!class_exists('Redux_Framework_sample_config')) {
 	            'icon'      => 'fa fa-bars',
 				'fields'	=> array(
 					array(
-						'id'   =>'divider-button-options',
+						'id'   =>'section-start',
 						'title' => __('Transitional Header Options', 'redux-framework-demo'),
-						'type' => 'divide'
+						'subtitle' => __('Update the trans header with these options.', 'redux-framework-demo'),
+						'type' => 'section',
+						'indent' => true,
 					),
 					array(
 						'id'	=> 'transitional-header-button',
@@ -364,10 +366,10 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'default'  => array(
 							'border-color'  => '#c8c8c8', 
 							'border-style'  => 'solid', 
-							'border-top'    => '0px', 
-							'border-right'  => '0px', 
-							'border-bottom' => '1px', 
-							'border-left'   => '0px'
+							'border-top'    => '0', 
+							'border-right'  => '0', 
+							'border-bottom' => '1', 
+							'border-left'   => '0'
 						),
 						'all' => false,
 						'validate' => 'color',						
@@ -445,11 +447,18 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'validate'	=> 'color',
 						'transparent'	=> false,
 					),
+					array(
+						'id'     => 'section-end',
+						'type'   => 'section',
+						'indent' => false,
+					),
 					// Header Options
 					array(
-						'id'   =>'divider-button-options',
+						'id'   =>'section-start',
 						'title' => __('Header Options', 'redux-framework-demo'),
-						'type' => 'divide'
+						'subtitle' => __('Update the header with these options.', 'redux-framework-demo'),
+						'type' => 'section',
+						'indent' => true,
 					),
 					array(
 						'id'   => 'color-header-border',
@@ -461,10 +470,10 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'default'  => array(
 							'border-color'  => '#c8c8c8', 
 							'border-style'  => 'solid', 
-							'border-top'    => '0px', 
-							'border-right'  => '0px', 
-							'border-bottom' => '1px', 
-							'border-left'   => '0px'
+							'border-top'    => '0', 
+							'border-right'  => '0', 
+							'border-bottom' => '1', 
+							'border-left'   => '0'
 						),
 						'all' => false,
 						'validate' => 'color',						
@@ -551,9 +560,16 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'default'	=> '+1 555 22 66 8890',
 					),
 					array(
-						'id'   =>'divider-button-options',
+						'id'     => 'section-end',
+						'type'   => 'section',
+						'indent' => false,
+					),
+					array(
+						'id'   =>'section-start',
 						'title' => __('Contact Options', 'redux-framework-demo'),
-						'type' => 'divide'
+						'subtitle' => __('Update the header button contact info with these options.', 'redux-framework-demo'),
+						'type' => 'section',
+						'indent' => true,
 					),
 					array(
 						'id'	=> 'site-header-email',
@@ -701,11 +717,11 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'subtitle' => __('If you want a button for your Jumbotron links, adjust the padding here (important).', 'redux-framework-demo'),
 						'desc' => __('You can enable or disable any piece of this field. Top, Right, Bottom, Left, or Units.', 'redux-framework-demo'),
 						'default' => array(
-							'padding-top'     => '15px', 
-							'padding-right'   => '15px', 
-							'padding-bottom'  => '15px', 
-							'padding-left'    => '15px',
-							'units'          => 'em', 
+							'padding-top'     => '15', 
+							'padding-right'   => '15', 
+							'padding-bottom'  => '15', 
+							'padding-left'    => '15',
+							'units'          => 'px', 
 						),
 					),
 					array(
@@ -736,11 +752,18 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'transparent'	=> false,
 						'background-size'	=> false,
 					),
+					array(
+						'id'     => 'section-end',
+						'type'   => 'section',
+						'indent' => false,
+					),
 					// Scroll Down Button
 					array(
-						'id'   =>'divider-button-options',
-						'title' => __('Scroll Down Button Options', 'redux-framework-demo'),
-						'type' => 'divide'
+						'id'   =>'section-start',
+						'title' => __('Scroll Down Options', 'redux-framework-demo'),
+						'subtitle' => __('Update the scroll down button visuals with these options.', 'redux-framework-demo'),
+						'type' => 'section',
+						'indent' => true,
 					),
 					array(
 						'id' => 'scroll-down-icon-image',
@@ -894,9 +917,11 @@ if (!class_exists('Redux_Framework_sample_config')) {
 	            'icon' => 'fa fa-book',
 	            'fields' => array(
 					array(
-						'id'   =>'divider-button-options',
+						'id'   =>'section-start',
 						'title' => __('Blog Post Options', 'redux-framework-demo'),
-						'type' => 'divide'
+						'subtitle' => __('Update the home page blog post visuals with these options.', 'redux-framework-demo'),
+						'type' => 'section',
+						'indent' => true,
 					),
 					array(
 						'id' => 'content-posts-container',
@@ -981,9 +1006,12 @@ if (!class_exists('Redux_Framework_sample_config')) {
 					),
 					// Button Options
 					array(
-						'id'   =>'divider-button-options',
+						'id'   =>'section-start',
 						'title' => __('Button Options', 'redux-framework-demo'),
-						'type' => 'divide'
+						'subtitle' => __('Update the button visuals with these options.', 'redux-framework-demo'),
+						'type' => 'section',
+						'indent' => true,
+					),
 					),
 					array(
 						'id' => 'color-button-background',
