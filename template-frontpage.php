@@ -59,12 +59,12 @@
             <a href="<?php echo $sliderlink; ?>" class="btn btn-lg button-success"><?php echo $sliderbutton; ?></a>
         <?php } ?>
         <div class="down-arrow">
-            <?php if( $scrdwnimg ) { ?>
-                <a href="#content" data-scroll><img src="<?php $scrdwnimg ?>" alt="" /></a>
-            <?php } elseif( $scrdwnicon ) { ?>
-                <a href="#content" data-scroll><span class="<?php $scrdwnicon ?>"></span></a>
-            <?php } if( $scrdwntxt ) { ?>
-                <span class="scroll-text"><?php $scrdwntxt; ?></span>
+            <?php if( ! empty( $scrdwnimg ) ) { ?>
+                <a href="#content" data-scroll><img src="<?php echo $scrdwnimg ?>" alt="" /></a>
+            <?php } elseif( ! empty( $scrdwnicon ) ) { ?>
+                <a href="#content" data-scroll><i class="<?php echo $scrdwnicon ?>"></i></a>
+            <?php } if( ! empty( $scrdwntxt ) ) { ?>
+                <span class="scroll-text"><?php echo $scrdwntxt; ?></span>
             <?php } ?>
         </div>
 
