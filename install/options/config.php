@@ -224,7 +224,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
             $this->sections[] = array(
 	            'title'		=> __('General', 'redux-framework-demo'),
 	            'desc'		=> __('The basic site setup. Please fill all fields out.', 'redux-framework-demo'),
-	            'icon'		=> 'fa fa-cog',
+	            'icon'		=> 'el el-icon-cog',
 	            'fields'	=> array(
 					array(
 						'id'	=> 'color-body-background',
@@ -338,7 +338,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 			$this->sections[] = array(
 	            'title'     => __('Header', 'redux-framework-demo'),
 	            'desc'      => __('The header. Make sure to double check every section.', 'redux-framework-demo'),
-	            'icon'      => 'fa fa-bars',
+	            'icon'      => 'el el-lines',
 				'fields'	=> array(
 					array(
 						'id'   =>'section-start',
@@ -604,7 +604,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 			$this->sections[] = array(
 				'title'     => __('Slider', 'redux-framework-demo'),
 				'desc'      => __('Use to color the text above the LayerSlider. Only use so if you are using one slide per page.', 'redux-framework-demo'),
-				'icon'      => 'fa fa-tint',
+				'icon'      => 'el el-screen',
 				'fields'    => array(
 					array(
 						'id'	=> 'color-jumbotron-background',
@@ -803,7 +803,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 			$this->sections[] = array(
 	            'title'     => __('Typography', 'redux-framework-demo'),
 	            'desc'      => __('This section is to set the overall typography for the body (not including the header and footer.', 'redux-framework-demo'),
-	            'icon'      => 'fa fa-paragraph',
+	            'icon'      => 'el el-fontsize',
 	            'fields'    => array(
 					array(
 						'id'	=> 'color-content-link',
@@ -919,7 +919,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
             $this->sections[] = array(
 	            'title' => __('Content', 'redux-framework-demo'),
 	            'desc' => __('This is to cover the typography that consist of the buttons and map icons on the body.', 'redux-framework-demo'),
-	            'icon' => 'fa fa-book',
+	            'icon' => 'el el-book',
 	            'fields' => array(
 					array(
 						'id'   =>'section-start',
@@ -1084,7 +1084,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
             $this->sections[] = array(
 	            'title'     => __('Footer', 'redux-framework-demo'),
 	            'desc'      => __('The footer info. Make sure to fill every option.', 'redux-framework-demo'),
-	            'icon'      => 'fa fa-anchor',
+	            'icon'      => 'el el-wrench',
 	            'fields'    => array(
 					array(
 						'id'	=> 'color-footer-background',
