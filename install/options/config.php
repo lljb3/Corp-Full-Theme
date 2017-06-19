@@ -1012,7 +1012,6 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'type' => 'section',
 						'indent' => true,
 					),
-					),
 					array(
 						'id' => 'color-button-background',
 						'type'	=> 'background',
