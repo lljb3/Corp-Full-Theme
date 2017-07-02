@@ -419,18 +419,19 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'google'	=> true,
 						'fonts'		=> $custom_fonts,
 						'ext-font-css' => $theme_url . '/style.css',
-						'font-backup'	=> false,
-						'font-style'	=> false,
+						'font-backup'	=> true,
+						'font-style'	=> true,
 						'font-weight'	=> true,
 						'text-align'	=> false,
+						'text-transform' => true,
 						//'subsets'	=> false, // Only appears if google is true and subsets not set to false
-						'font-size'	=> false,
-						'line-height'	=> false,
+						'font-size'	=> true,
+						'line-height'	=> true,
 						'word-spacing'	=> true, // Defaults to false
 						'letter-spacing'	=> true, // Defaults to false
 						'color'	=> true,
 						//'preview'	=> false, // Disable the previewer
-						'all_styles' => false, // Enable all Google Font style/weight variations to be added to the page
+						'all_styles' => true, // Enable all Google Font style/weight variations to be added to the page
 						'output' => array('#trans-menu.large'), // An array of CSS selectors to apply this font style to dynamically
 						'units'	=> 'em', // Defaults to px
 						'subtitle'	=> __('', 'redux-framework-demo'),
@@ -522,18 +523,19 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'google'	=> true,
 						'fonts'		=> $custom_fonts,
 						'ext-font-css' => $theme_url . '/style.css',
-						'font-backup'	=> false,
-						'font-style'	=> false,
+						'font-backup'	=> true,
+						'font-style'	=> true,
 						'font-weight'	=> true,
 						'text-align'	=> false,
+						'text-transform' => true,
 						//'subsets'	=> false, // Only appears if google is true and subsets not set to false
-						'font-size'	=> false,
-						'line-height'	=> false,
+						'font-size'	=> true,
+						'line-height'	=> true,
 						'word-spacing'	=> true, // Defaults to false
 						'letter-spacing'	=> true, // Defaults to false
 						'color'	=> true,
 						//'preview'	=> false, // Disable the previewer
-						'all_styles' => false, // Enable all Google Font style/weight variations to be added to the page
+						'all_styles' => true, // Enable all Google Font style/weight variations to be added to the page
 						'output' => array('#header-menu,#trans-menu.small'), // An array of CSS selectors to apply this font style to dynamically
 						'units'	=> 'em', // Defaults to px
 						'subtitle'	=> __('', 'redux-framework-demo'),
@@ -658,6 +660,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'font-style'	=> true,
 						'font-weight'	=> true,
 						'text-align'	=> true,
+						'text-transform' => true,
 						//'subsets'	=> false, // Only appears if google is true and subsets not set to false
 						'font-size'	=> true,
 						'line-height'	=> true,
@@ -688,6 +691,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'font-style'	=> true,
 						'font-weight'	=> true,
 						'text-align'	=> true,
+						'text-transform' => true,
 						//'subsets'	=> false, // Only appears if google is true and subsets not set to false
 						'font-size'	=> true,
 						'line-height'	=> true,
@@ -840,43 +844,17 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'transparent'	=> false,
 					),
 					array(
-						'id'	=> 'typography-header',
-						'type'	=> 'typography',
-						'title'	=> __('Typography Header', 'redux-framework-demo'),
-						'google'	=> true,
-						'fonts'		=> $custom_fonts,
-						'ext-font-css' => $theme_url . '/style.css',
-						'font-backup'	=> false,
-						'font-style'	=> false,
-						'font-weight'	=> false,
-						'text-align'	=> false,
-						//'subsets'	=> false, // Only appears if google is true and subsets not set to false
-						'font-size'	=> true,
-						'line-height'	=> true,
-						'word-spacing'	=> true, // Defaults to false
-						'letter-spacing' => true, // Defaults to false
-						'color'	=> false,
-						//'preview'	=> false, // Disable the previewer
-						'all_styles' => false, // Enable all Google Font style/weight variations to be added to the page
-						'output' => array('header .navbar'), // An array of CSS selectors to apply this font style to dynamically
-						'units'	=> 'em', // Defaults to px
-						'subtitle'	=> __('', 'redux-framework-demo'),
-						'default'	=> array(
-							'font-family'	=> 'Roboto',
-							'google'	=> true,
-						),
-					),
-					array(
 						'id'	=> 'typography-headings',
 						'type'	=> 'typography',
 						'title'	=> __('Typography Headings', 'redux-framework-demo'),
 						'google'	=> true,
 						'fonts'		=> $custom_fonts,
 						'ext-font-css' => $theme_url . '/style.css',
-						'font-backup'   => false,
-						'font-style'    => false,
+						'font-backup'   => true,
+						'font-style'    => true,
 						'font-weight'	=> true,
-						'text-align'	=> false,
+						'text-align'	=> true,
+						'text-transform' => true,
 						//'subsets'	=> false, // Only appears if google is true and subsets not set to false
 						'font-size'     => true,
 						'line-height'   => true,
@@ -884,7 +862,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'letter-spacing'=> true, // Defaults to false
 						'color'	=> true,
 						//'preview'	=> false, // Disable the previewer
-						'all_styles' => false, // Enable all Google Font style/weight variations to be added to the page
+						'all_styles' => true, // Enable all Google Font style/weight variations to be added to the page
 						'output' => array('h1,h2,h3,h4,h5,h6'), // An array of CSS selectors to apply this font style to dynamically
 						'units'	=> 'em', // Defaults to px
 						'subtitle'	=> __('', 'redux-framework-demo'),
@@ -906,14 +884,15 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'font-style'	=> true,
 						'font-weight'	=> true,
 						'text-align'	=> true,
+						'text-transform' => true,
 						//'subsets'	=> false, // Only appears if google is true and subsets not set to false
-						'font-size'	=> false,
-						'line-height'	=> false,
+						'font-size'	=> true,
+						'line-height'	=> true,
 						'word-spacing'	=> true, // Defaults to false
 						'letter-spacing'	=> true, // Defaults to false
 						'color'	=> true,
 						//'preview'	=> false, // Disable the previewer
-						'all_styles' => false, // Enable all Google Font style/weight variations to be added to the page
+						'all_styles' => true, // Enable all Google Font style/weight variations to be added to the page
 						'output' => array('body'), // An array of CSS selectors to apply this font style to dynamically
 						'units'	=> 'em', // Defaults to px
 						'subtitle'	=> __('', 'redux-framework-demo'),
@@ -982,9 +961,9 @@ if (!class_exists('Redux_Framework_sample_config')) {
 					array(
 						'id' => 'color-blog-posts-read-more-bg',
 						'type'	=> 'color',
-						'title'	=> __('Read More Button Background Color', 'redux-framework-demo'), 
-						'subtitle'	=> __('Handles read more button background colors (default: #f8f8f8)', 'redux-framework-demo'),
-						'default'	=> '#242424',
+						'title'	=> __('Read More Button Border Color', 'redux-framework-demo'), 
+						'subtitle'	=> __('Handles read more button border colors (default: #70b9a0)', 'redux-framework-demo'),
+						'default'	=> '#70b9a0',
 						'validate'	=> 'color',
 						'transparent'	=> false,
 					),
@@ -992,8 +971,8 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'id' => 'color-blog-posts-read-more-bg-hover',
 						'type'	=> 'color',
 						'title'	=> __('Read More Button Background Color Hover', 'redux-framework-demo'), 
-						'subtitle'	=> __('Handles read more hover button background colors (default: #f8f8f8)', 'redux-framework-demo'),
-						'default'	=> '#242424',
+						'subtitle'	=> __('Handles read more hover button background colors (default: #70b9a0)', 'redux-framework-demo'),
+						'default'	=> '#70b9a0',
 						'validate'	=> 'color',
 						'transparent'	=> false,
 					),
@@ -1001,8 +980,8 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'id' => 'color-blog-posts-read-more-text',
 						'type'	=> 'color',
 						'title'	=> __('Read More Button Link Color', 'redux-framework-demo'), 
-						'subtitle'	=> __('Handles read more button text colors (default: #f8f8f8)', 'redux-framework-demo'),
-						'default'	=> '#f8f8f8',
+						'subtitle'	=> __('Handles read more button text colors (default: #70b9a0)', 'redux-framework-demo'),
+						'default'	=> '#70b9a0',
 						'validate'	=> 'color',
 						'transparent'	=> false,
 					),
@@ -1130,7 +1109,8 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'font-backup' => false,
 						'font-style' => false,
 						'font-weight' => true,
-						'text-align' => false,
+						'text-align'	=> false,
+						'text-transform' => true,
 						//'subsets'	=> false, // Only appears if google is true and subsets not set to false
 						'font-size'	=> false,
 						'line-height' => false,

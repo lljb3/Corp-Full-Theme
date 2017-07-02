@@ -49,12 +49,13 @@ body {
 	height: 100%;
 	cursor: default;
 	padding: 0 !important;
+	font-size: 16.5px;
+	line-height: 1.42;
 	text-shadow: none;
 	-moz-text-shadow: none;
 	-webkit-text-shadow: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: #000;
 }
 h1,h2,h3,h4,h5,h6 {
 	display: inline-block; 
@@ -173,7 +174,6 @@ p {
 	max-height: 74px;
 	font-weight: 100;
 	font-size: 85%;
-	text-transform: uppercase;
 	z-index: 9999;
 }
 .navbar-default {

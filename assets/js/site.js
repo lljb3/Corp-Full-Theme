@@ -106,7 +106,7 @@ jQuery(document).ready(function($) {
 			maximum   : 3000,
 			minFont   : 16,
 			maxFont   : 48,
-			fontRatio : 72
+			fontRatio : 81
 		});
 	});
 					
