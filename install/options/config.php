@@ -348,6 +348,20 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'indent' => true,
 					),
 					array(
+						'id' => 'color-hamburger-background',
+						'type'	=> 'background',
+						'output'	=> array('.navbar-toggle .icon-bar,.navbar-toggle .icon-bar:hover,.navbar-toggle .icon-bar:focus,.navbar-toggle .icon-bar:active,.navbar-toggle .icon-bar:visited'),
+						'title'	=> __('Hamburger Background', 'redux-framework-demo'),
+						'subtitle'	=> __('Handles the hamburger menu icon bar colors (default: #f8f8f8)', 'redux-framework-demo'),
+						'default'	=> array( 'background-color' => '#f8f8f8' ),
+						'background-repeat'	=> false,
+						'background-attachment'	=> false,
+						'background-position'	=> false,
+						'background-image'	=> false,
+						'transparent'	=> false,
+						'background-size'	=> false,
+					),
+					array(
 						'id'	=> 'transitional-header-button',
 						'type'	=> 'checkbox',
 						'title'	=> __('Transitional Header', 'redux-framework-demo'),
@@ -421,10 +435,10 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'units'	=> 'em', // Defaults to px
 						'subtitle'	=> __('', 'redux-framework-demo'),
 						'default'	=> array(
-							'font-family'	=> 'Open Sans',
+							'font-family'	=> 'Roboto',
 							'font-style'	=> '400',
 							'google'	=> true,
-							'color'	=> '#666'
+							'color'	=> '#242424'
 						),
 					),
 					array(
@@ -524,10 +538,10 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'units'	=> 'em', // Defaults to px
 						'subtitle'	=> __('', 'redux-framework-demo'),
 						'default'	=> array(
-							'font-family'	=> 'Open Sans',
+							'font-family'	=> 'Roboto',
 							'font-style'	=> '400',
 							'google'	=> true,
-							'color'	=> '#666'
+							'color'	=> '#242424'
 						),
 					),
 					array(
@@ -609,7 +623,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 					array(
 						'id'	=> 'color-jumbotron-background',
 						'type'	=> 'background',
-						'output'	=> array('.jumbotron'),
+						'output'	=> array('.jumbotron .slider-wash'),
 						'title'	=> __('Jumbotron Background Color', 'redux-framework-demo'),
 						'subtitle'	=> __('Jumbotron Background Color (default: #f8f8f8)', 'redux-framework-demo'),
 						'default'	=> array( 'background-color' => '#f8f8f8' ),
@@ -656,10 +670,10 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'units'	=> 'em', // Defaults to px
 						'subtitle'	=> __('', 'redux-framework-demo'),
 						'default'	=> array(
-							'font-family'	=> 'Open Sans',
+							'font-family'	=> 'Roboto',
 							'font-style'	=> '400',
 							'google'	=> true,
-							'color'	=> '#666'
+							'color'	=> '#242424'
 						),
 					),
 					array(
@@ -685,10 +699,10 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'units'	=> 'em', // Defaults to px
 						'subtitle'	=> __('', 'redux-framework-demo'),
 						'default'	=> array(
-							'font-family'	=> 'Open Sans',
+							'font-family'	=> 'Roboto',
 							'font-style'	=> '400',
 							'google'	=> true,
-							'color'	=> '#666'
+							'color'	=> '#242424'
 						),
 					),
 					array(
@@ -848,7 +862,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'units'	=> 'em', // Defaults to px
 						'subtitle'	=> __('', 'redux-framework-demo'),
 						'default'	=> array(
-							'font-family'	=> 'Lato',
+							'font-family'	=> 'Roboto',
 							'google'	=> true,
 						),
 					),
@@ -875,10 +889,10 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'units'	=> 'em', // Defaults to px
 						'subtitle'	=> __('', 'redux-framework-demo'),
 						'default'	=> array(
-							'font-family'	=> 'Lato',
+							'font-family'	=> 'Roboto',
 							'font-style'	=> '400',
 							'google'	=> true,
-							'color'	=> '#666'
+							'color'	=> '#242424'
 						),
 					),
 					array(
@@ -904,10 +918,10 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'units'	=> 'em', // Defaults to px
 						'subtitle'	=> __('', 'redux-framework-demo'),
 						'default'	=> array(
-							'font-family'	=> 'Open Sans',
+							'font-family'	=> 'Roboto',
 							'font-style'	=> '400',
 							'google'	=> true,
-							'color'	=> '#666'
+							'color'	=> '#242424'
 						),
 					),
 				)
@@ -944,7 +958,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'title'	=> __('Number of Blog Posts', 'redux-framework-demo'),
 						'subtitle'	=> __('Set the number of blog posts to generate', 'redux-framework-demo'),
 						'desc'	=> __('Set in multiples of 3.', 'redux-framework-demo'),
-						'default' => 1,
+						'default' => 3,
 						'min' => 0,
 						'step' => 1,
 						'max' => 9,
@@ -956,7 +970,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'type'	=> 'background',
 						'output' => array('.home #content #posts-section .post-item'),
 						'title'	=> __('Blog Post Background', 'redux-framework-demo'),
-						'subtitle'	=> __('Handles all button colors (default: #333)', 'redux-framework-demo'),
+						'subtitle'	=> __('Handles read more image background color wash (default: #333)', 'redux-framework-demo'),
 						'default'	=> array( 'background-color' => '#333' ),
 						'background-repeat'	=> false,
 						'background-attachment'	=> false,
@@ -967,29 +981,21 @@ if (!class_exists('Redux_Framework_sample_config')) {
 					),
 					array(
 						'id' => 'color-blog-posts-read-more-bg',
-						'type'	=> 'background',
-						'title'	=> __('Read More Button Background', 'redux-framework-demo'),
-						'subtitle'	=> __('Handles read more button colors (default: #333)', 'redux-framework-demo'),
-						'default'	=> array( 'background-color' => '#333' ),
-						'background-repeat'	=> false,
-						'background-attachment'	=> false,
-						'background-position'	=> false,
-						'background-image'	=> false,
+						'type'	=> 'color',
+						'title'	=> __('Read More Button Background Color', 'redux-framework-demo'), 
+						'subtitle'	=> __('Handles read more button background colors (default: #f8f8f8)', 'redux-framework-demo'),
+						'default'	=> '#242424',
+						'validate'	=> 'color',
 						'transparent'	=> false,
-						'background-size'	=> false,
 					),
 					array(
 						'id' => 'color-blog-posts-read-more-bg-hover',
-						'type'	=> 'background',
-						'title'	=> __('Read More Button Hover Background', 'redux-framework-demo'),
-						'subtitle'	=> __('Handles read more hover button colors (default: #333)', 'redux-framework-demo'),
-						'default'	=> array( 'background-color' => '#333' ),
-						'background-repeat'	=> false,
-						'background-attachment'	=> false,
-						'background-position'	=> false,
-						'background-image'	=> false,
+						'type'	=> 'color',
+						'title'	=> __('Read More Button Background Color Hover', 'redux-framework-demo'), 
+						'subtitle'	=> __('Handles read more hover button background colors (default: #f8f8f8)', 'redux-framework-demo'),
+						'default'	=> '#242424',
+						'validate'	=> 'color',
 						'transparent'	=> false,
-						'background-size'	=> false,
 					),
 					array(
 						'id' => 'color-blog-posts-read-more-text',
@@ -1025,7 +1031,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 					array(
 						'id' => 'color-button-background',
 						'type'	=> 'background',
-						'output'	=> array('.btn,.btn:focus,.btn:visited,.wpcf7-submit,.wpcf7-submit:focus,.wpcf7-submit:visited,.button,.button:visited,.button:focus,button,button:focus,button:visited,.submit,.submit:focus,.submit:visited,.navbar-toggle .icon-bar,.navbar-toggle .icon-bar:hover,.navbar-toggle .icon-bar:focus,.navbar-toggle .icon-bar:active,.navbar-toggle .icon-bar:visited,#shop-main .button,#shop-main .button:visited,#shop-main .button:focus'),
+						'output'	=> array('.btn,.btn:focus,.btn:visited,.wpcf7-submit,.wpcf7-submit:focus,.wpcf7-submit:visited,.button,.button:visited,.button:focus,button,button:focus,button:visited,.submit,.submit:focus,.submit:visited, #shop-main .button,#shop-main .button:visited,#shop-main .button:focus'),
 						'title'	=> __('Button Background', 'redux-framework-demo'),
 						'subtitle'	=> __('Handles all button colors (default: #242424)', 'redux-framework-demo'),
 						'default'	=> array( 'background-color' => '#242424' ),
@@ -1137,10 +1143,10 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'units'	=> 'em', // Defaults to px
 						'subtitle'	=> __('', 'redux-framework-demo'),
 						'default'	=> array(
-							'font-family' => 'Open Sans',
+							'font-family' => 'Roboto',
 							'font-style' => '400',
 							'google' => true,
-							'color'	=> '#666'
+							'color'	=> '#242424'
 						),
 					),
 					array(
@@ -1168,7 +1174,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'subtitle'	=> __('', 'redux-framework-demo'),
 						'desc'	=> __('', 'redux-framework-demo'),
 						//'validate'	=> 'numeric',
-						'default'	=> '&copy; 2016 - <a href="http://kakemultimedia.com">Kake Multimedia</a>',
+						'default'	=> '&copy;2017 <a href="http://kakemultimedia.com">Kake Multimedia</a>',
 					),
 					array(
 						'id'	=> 'footer-show-up-button',

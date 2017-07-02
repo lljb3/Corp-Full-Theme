@@ -138,7 +138,7 @@
 			// Add any extra styles here if needed.
 			echo '.jumbotron .slider { opacity: '. $opacity .' }';
 			echo '.home #content #posts-section .read-more { border-color: '. $read_more_bg .'; color: '. $read_more_text .' }';
-			echo '.home #content #posts-section .read-more:hover { background-color: '. $read_more_bg_hover .'; color: '. $read_more_text_hover .' }';
+			echo '.home #content #posts-section .read-more:hover { background-color: '. $read_more_bg_hover .'; color: '. $read_more_text_hover .'; border-color: '. $read_more_bg_hover .'; }';
 			echo $custom_styles;
 		echo '</style>';
 	}

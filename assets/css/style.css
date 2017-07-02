@@ -398,7 +398,7 @@ p {
 }
 .jumbotron .slider {
 	height: 100%;
-	z-index: 1;
+	z-index: 2;
 	position: fixed;
     top: 0;
 	left: 0;
@@ -407,6 +407,14 @@ p {
 .slider .ls-wp-container.ls-container.ls-noskin,.slider .ls-inner,
 .slider .ls-slide.ls-animating {
 	height: 100% !important;
+}
+.jumbotron .slider-wash {
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	position: fixed;
+    top: 0;
+	left: 0;
 }
 .jumbotron .ls-bg {
 	max-width: 100% !important;
@@ -500,7 +508,7 @@ p {
 /* Content Info */
 #content {
 	display: block;
-	padding: 2em 15px;
+	padding: 0 15px;
 	z-index: 10;
 }
 #content .widget ul {
@@ -515,9 +523,6 @@ p {
 	padding-right: 0;
 }
 /* Home Posts */
-.home #content #posts-section {
-    margin-bottom: -2em;
-}
 .home #content #posts-section .post-item,
 .home #content #posts-section .post-thumbnail {
     max-height: 375px;

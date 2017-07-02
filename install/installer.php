@@ -82,6 +82,11 @@
 				'required'  => false,
 			),
 			array(
+				'name'      => 'Menu Icons',
+				'slug'      => 'menu-icons',
+				'required'  => true,
+			),
+			array(
 				'name'      => 'Redux Framework',
 				'slug'      => 'redux-framework',
 				'required'  => true,

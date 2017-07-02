@@ -68,12 +68,12 @@
                 <br /><span class="scroll-text"><?php echo $scrdwntxt; ?></span>
             <?php } ?>
         </div>
-
     <!-- end .slider-text --></div>
     <div class="slider">
         <?php $slidername = get_post_meta($post->ID, "layer_slider_post_class", true); ?>
         <?php layerslider($slidername); ?>
     <!-- end .slider --></div>
+    <div class="slider-wash"></div>
 <!-- end .jumbotron --></div>
 
 <!-- Content Information -->
@@ -84,9 +84,7 @@
             <div class="row" id="content-section">
                 <div class="col-md-10 col-md-offset-1">
                     <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-                    <h2 class="has-title hidden"><?php the_title(); ?></h2>
                     <div class="has-text"><?php the_content(); ?></div>
-                    <div class="hidden"><?php comments_template( '', true ); ?></div>
                     <?php endwhile; ?>
                 <!-- end .col-md-10 --></div>
             <!-- end .row --></div>

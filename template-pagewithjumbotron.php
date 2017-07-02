@@ -64,6 +64,7 @@ Template Name: Template - Jumbotron Page
         <?php $slidername = get_post_meta($post->ID, "layer_slider_post_class", true); ?>
         <?php layerslider($slidername); ?>
     <!-- end .slider --></div>
+    <div class="slider-wash"></div>
 <!-- end .jumbotron --></div>
 
 <!-- Content Information -->
