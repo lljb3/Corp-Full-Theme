@@ -322,10 +322,10 @@ p {
 .navbar-nav a:visited {
 	background: none !important;
 }
-.navbar-nav .menu-item span {
+.navbar-nav .menu-item a {
 	transition: all .2s ease-in-out;
 }
-.navbar-nav .menu-item:hover span {
+.navbar-nav .menu-item a:hover {
 	transition: all .2s ease-in-out;
 }
 .visible-xs .navbar-nav a {

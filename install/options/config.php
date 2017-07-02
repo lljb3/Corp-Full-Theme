@@ -341,13 +341,6 @@ if (!class_exists('Redux_Framework_sample_config')) {
 	            'icon'      => 'el el-lines',
 				'fields'	=> array(
 					array(
-						'id'   =>'section-start',
-						'title' => __('Transitional Header Options', 'redux-framework-demo'),
-						'subtitle' => __('Update the trans header with these options.', 'redux-framework-demo'),
-						'type' => 'section',
-						'indent' => true,
-					),
-					array(
 						'id' => 'color-hamburger-background',
 						'type'	=> 'background',
 						'output'	=> array('.navbar-toggle .icon-bar,.navbar-toggle .icon-bar:hover,.navbar-toggle .icon-bar:focus,.navbar-toggle .icon-bar:active,.navbar-toggle .icon-bar:visited'),
@@ -360,6 +353,13 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'background-image'	=> false,
 						'transparent'	=> false,
 						'background-size'	=> false,
+					),
+					array(
+						'id'   =>'section-start',
+						'title' => __('Transitional Header Options', 'redux-framework-demo'),
+						'subtitle' => __('Update the trans header with these options.', 'redux-framework-demo'),
+						'type' => 'section',
+						'indent' => true,
 					),
 					array(
 						'id'	=> 'transitional-header-button',
@@ -481,7 +481,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'title' => __('Header Border', 'redux-framework-demo'),
 						'subtitle' => __('Header Border'),
 						'desc'	=> __('', 'redux-framework-demo'),
-						'output' => array('#trans-menu.small, header .navbar, header .navbar .navbar-nav > ul > li ul.sub-menu, header .navbar nav > div > ul > li ul.sub-menu, #header-menu, #trans-menu.small, header .dropdown-menu'),
+						'output' => array('#trans-menu.small, header .navbar, header .navbar .navbar-nav > ul > li ul.sub-menu, header .navbar nav > div > ul > li ul.sub-menu, #header-menu, header .dropdown-menu'),
 						'default'  => array(
 							'border-color'  => '#c8c8c8', 
 							'border-style'  => 'solid', 
