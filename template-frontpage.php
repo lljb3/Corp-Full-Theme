@@ -59,13 +59,15 @@
             <a href="<?php echo $sliderlink; ?>" class="btn btn-lg button-success"><?php echo $sliderbutton; ?></a>
         <?php } ?>
         <div class="down-arrow">
-            <?php $scrdwnimg = $kake_theme_option['scroll-down-icon-image']['url']; $scrdwnicon = $kake_theme_option['scroll-down-icon-html']; $scrdwntxt = $kake_theme_option['scroll-down-text']; ?>
+            <?php $scrdwnimg = $kake_theme_option['scroll-down-icon-image']['url']; $scrdwnicon = $kake_theme_option['scroll-down-icon-html']; $scrdwntxt = $kake_theme_option['scroll-down-text']; $scrdwnline = $kake_theme_option['scroll-down-line']; ?>
             <?php if( !empty( $scrdwnimg ) && empty( $scrdwnicon ) ) { ?>
                 <a href="#content" data-scroll><img src="<?php echo $scrdwnimg ?>" alt="" /></a>
             <?php } elseif( !empty( $scrdwnicon ) ) { ?>
                 <a href="#content" data-scroll><i class="<?php echo $scrdwnicon ?>"></i></a>
             <?php } if( !empty( $scrdwntxt ) ) { ?>
-                <br /><span class="scroll-text"><?php echo $scrdwntxt; ?></span>
+                <br /><a href="#content" data-scroll><span class="scroll-text"><?php echo $scrdwntxt; ?></span></a>
+            <?php } if( !empty( $scrdwnline ) ) { ?>
+                <br /><span class="line"></span>
             <?php } ?>
         </div>
     <!-- end .slider-text --></div>

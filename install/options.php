@@ -130,6 +130,13 @@
 		$read_more_bg_hover = $kake_theme_option['color-blog-posts-read-more-bg-hover'];
 		$read_more_text = $kake_theme_option['color-blog-posts-read-more-text'];
 		$read_more_text_hover = $kake_theme_option['color-blog-posts-read-more-text-hover'];
+		// Header Border
+		$border_lg_px = $kake_theme_option['color-trans-header-border']['border-bottom'];
+		$border_lg_style = $kake_theme_option['color-trans-header-border']['border-style'];
+		$border_lg_color = $kake_theme_option['color-trans-header-border']['border-color'];
+		$border_sm_px = $kake_theme_option['color-header-border']['border-bottom'];
+		$border_sm_style = $kake_theme_option['color-header-border']['border-style'];
+		$border_sm_color = $kake_theme_option['color-header-border']['border-color'];
 		// Custom Styles
 		$custom_styles = $kake_theme_option['custom-styles'];
 		$style_type = 'type="text/css"';
