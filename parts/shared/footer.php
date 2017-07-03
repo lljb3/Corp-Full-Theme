@@ -10,6 +10,8 @@
 	$instagram = $kake_theme_option['social-instagram'];
 	$youtube = $kake_theme_option['social-youtube'];
 	$skype = $kake_theme_option['social-skype'];
+	$yelp = $kake_theme_option['social-yelp'];
+	
 ?>
 	
 <!-- Back to Top -->
@@ -144,7 +146,8 @@
                     <?php if ( $pinterest ) { ?><a href="<?php echo $pinterest; ?>"><i aria-hidden="true" class="fa fa-pinterest pinterest"></i></a><?php } ?>
                     <?php if ( $instagram ) { ?><a href="<?php echo $instagram; ?>"><i aria-hidden="true" class="fa fa-instagram instagram"></i></a><?php } ?>
                     <?php if ( $skype ) { ?><a href="<?php echo $skype; ?>"><i aria-hidden="true" class="fa fa-skype skype"></i></a><?php } ?>
-                <!-- end .social --></div>
+                    <?php if ( $yelp ) { ?><a href="<?php echo $yelp; ?>"><i aria-hidden="true" class="fa fa-yelp yelp"></i></a><?php } ?>
+				<!-- end .social --></div>
             <!-- end .col-md-5 --></div>
         <!-- end .row --></div>
     <!-- end .container-fluid --></div>

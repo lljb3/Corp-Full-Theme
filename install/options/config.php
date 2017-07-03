@@ -1273,6 +1273,15 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						//'validate'	=> 'url',
 						'default'	=> '',
 					),
+					array(
+						'id'	=> 'social-yelp',
+						'type'	=> 'text',
+						'title'	=> __('Yelp URL', 'redux-framework-demo'),
+						'subtitle'	=> __('', 'redux-framework-demo'),
+						'desc'	=> __('', 'redux-framework-demo'),
+						//'validate'	=> 'url',
+						'default'	=> '',
+					),
 				)
 			);
 	        
