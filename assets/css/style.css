@@ -403,11 +403,6 @@ p {
     top: 0;
 	left: 0;
 }
-.slider .ls-wp-fullwidth-container,.slider .ls-wp-fullwidth-helper,
-.slider .ls-wp-container.ls-container.ls-noskin,.slider .ls-inner,
-.slider .ls-slide.ls-animating {
-	height: 100% !important;
-}
 .jumbotron .slider-wash {
 	width: 100%;
 	height: 100%;

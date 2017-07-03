@@ -29,20 +29,16 @@ jQuery(document).ready(function($) {
 		
 	// Height to Viewport
 	$(this).ready(function(e) {
-		$(window).resize(function() {
-			setHeight();
-		});
-				
 		function setHeight() {
 			windowHeight = $(window).innerHeight();
 			$('.jumbotron').css('min-height', windowHeight);
-			$('.jumbotron .ls-wp-fullwidth-container').css('min-height', windowHeight).css('height','100% !important');
-			$('.jumbotron .ls-wp-fullwidth-helper').css('min-height', windowHeight).css('height','100% !important');
-			$('.jumbotron .ls-wp-container.ls-container.ls-fullwidth').css('min-height', windowHeight).css('height','100% !important');
-			$('.jumbotron .ls-inner').css('min-height', windowHeight).css('height','100% !important');
-			$('.jumbotron .ls-slide.ls-animating').css('min-height', windowHeight).css('height','100% !important');
+			$('.jumbotron .slider').css('min-height', windowHeight);
 		};
-		setHeight();			
+		setHeight();
+		// Window Resize			
+		$(window).resize(function() {
+			setHeight();
+		});
     });
 		
 	// To Top Button
