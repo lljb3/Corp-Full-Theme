@@ -14,7 +14,7 @@
 	
 <!-- Back to Top -->
 <?php if ( $kake_theme_option['footer-show-up-button'] ) { ?>
-	<a data-scroll href="#totop" class="totop fadeOut"><span class="glyphicon glyphicon-triangle-top"</i></a>
+	<a data-scroll href="#totop" class="totop fadeOut"><span class="glyphicon glyphicon-triangle-top"></span></a>
 <?php } ?>
 
 <!-- Sitemap Information -->

@@ -41,7 +41,7 @@ jQuery(document).ready(function($) {
 		});			
 	}
 	if(is_touch_device()) {
-		$('<span href="#" data-toggle="dropdown" id="dropdown-arrow" aria-haspopup="true" class="dropdown-toggle visible-xs glyphicon glyphicon-chevron-down"></span>').insertAfter('.dropdown-toggle#dropdown-main');
+		$('<a href="#" data-toggle="dropdown" id="dropdown-arrow" aria-haspopup="true" class="dropdown-toggle visible-xs"><i class="glyphicon glyphicon-chevron-down"></i></a>').insertAfter('.dropdown-toggle#dropdown-main');
 		$('.dropdown-toggle#dropdown-main', this).toggleClass("disabled");
 	}
 		
