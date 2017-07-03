@@ -87,6 +87,11 @@
 				'required'  => true,
 			),
 			array(
+				'name'      => 'All-In-One WP Migration',
+				'slug'      => 'all-in-one-wp-migration',
+				'required'  => true,
+			),			
+			array(
 				'name'      => 'Redux Framework',
 				'slug'      => 'redux-framework',
 				'required'  => true,
