@@ -817,12 +817,32 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'subtitle'  => __('Text that denotes scroll down. Can say anything if needed from site design.', 'redux-framework-demo'),
 					),
 					array(
+						'id'	=> 'scroll-down-text-color',
+						'type'	=> 'color',
+						'title'	=> __('Scroll Down Line Color', 'redux-framework-demo'), 
+						'subtitle'	=> __('Scroll Down Line Link Color (default: #70b9a0)', 'redux-framework-demo'),
+						'output'	=> array('.down-arrow .scroll-text,.down-arrow .scroll-text:hover,.down-arrow .scroll-text:focus,.down-arrow .scroll-text:active'),
+						'default'	=> '#70b9a0',
+						'validate'	=> 'color',
+						'transparent'	=> false,
+					),
+					array(
 						'id'	=> 'scroll-down-line',
 						'type'	=> 'checkbox',
 						'title'	=> __('Scroll Down Line', 'redux-framework-demo'),
 						'subtitle'	=> __('Adds a line on the scroll down.', 'redux-framework-demo'),
 						'desc'	=> __('', 'redux-framework-demo'),
 						'default'	=> 1
+					),
+					array(
+						'id'	=> 'scroll-down-line-color',
+						'type'	=> 'color',
+						'title'	=> __('Scroll Down Line Color', 'redux-framework-demo'), 
+						'subtitle'	=> __('Scroll Down Line Link Color (default: #70b9a0)', 'redux-framework-demo'),
+						'output'	=> array('.down-arrow .line:before'),
+						'default'	=> '#70b9a0',
+						'validate'	=> 'color',
+						'transparent'	=> false,
 					),
 					array(
 						'id'     => 'section-end',

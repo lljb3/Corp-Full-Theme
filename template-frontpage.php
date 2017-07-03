@@ -65,8 +65,8 @@
             <?php } elseif( !empty( $scrdwnicon ) ) { ?>
                 <a href="#content" data-scroll><i class="<?php echo $scrdwnicon ?>"></i></a>
             <?php } if( !empty( $scrdwntxt ) ) { ?>
-                <br /><a href="#content" data-scroll><span class="scroll-text"><?php echo $scrdwntxt; ?></span></a>
-            <?php } if( !empty( $scrdwnline ) ) { ?>
+                <br /><a href="#content" class="scroll-text" data-scroll><span><?php echo $scrdwntxt; ?></span></a>
+            <?php } if( ( $scrdwnline ) ) { ?>
                 <br /><span class="line"></span>
             <?php } ?>
         </div>

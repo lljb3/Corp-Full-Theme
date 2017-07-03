@@ -58,7 +58,18 @@ Template Name: Template - Jumbotron Page
         ?>
             <a href="<?php echo $sliderlink; ?>" class="btn btn-lg button-success"><?php echo $sliderbutton; ?></a>
         <?php } ?>
-        <div class="down-arrow"><a href="#content" data-scroll><span class="glyphicon glyphicon-triangle-bottom"></span></a></div>
+        <div class="down-arrow">
+            <?php $scrdwnimg = $kake_theme_option['scroll-down-icon-image']['url']; $scrdwnicon = $kake_theme_option['scroll-down-icon-html']; $scrdwntxt = $kake_theme_option['scroll-down-text']; $scrdwnline = $kake_theme_option['scroll-down-line']; ?>
+            <?php if( !empty( $scrdwnimg ) && empty( $scrdwnicon ) ) { ?>
+                <a href="#content" data-scroll><img src="<?php echo $scrdwnimg ?>" alt="" /></a>
+            <?php } elseif( !empty( $scrdwnicon ) ) { ?>
+                <a href="#content" data-scroll><i class="<?php echo $scrdwnicon ?>"></i></a>
+            <?php } if( !empty( $scrdwntxt ) ) { ?>
+                <br /><a href="#content" class="scroll-text" data-scroll><span><?php echo $scrdwntxt; ?></span></a>
+            <?php } if( ( $scrdwnline ) ) { ?>
+                <br /><span class="line"></span>
+            <?php } ?>
+        </div>
     <!-- end .slider-text --></div>
     <div class="slider">
         <?php $slidername = get_post_meta($post->ID, "layer_slider_post_class", true); ?>

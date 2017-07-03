@@ -356,37 +356,37 @@ p {
 }
 .large,.large .pull-left,.large .pull-right,
 .small,.small .pull-left,.small .pull-right {
-	transition: all .2s;
-	-moz-transition: all .2s;
-	-webkit-transition: all .2s;
-	-o-transition: all .2s;
+	transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
 }
 /* Large Menu */
 .large {
-	transition: all .2s;
-	-moz-transition: all .2s;
-	-webkit-transition: all .2s;
-	-o-transition: all .2s;
+	transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
 }
 .large .menu {
-	transition: all .2s;
-	-moz-transition: all .2s;
-	-webkit-transition: all .2s;
-	-o-transition: all .2s;
+	transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
 }
 /* Small Menu */
 .small {
-	transition: all .2s;
-	-moz-transition: all .2s;
-	-webkit-transition: all .2s;
-	-o-transition: all .2s;
+	transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
 }
 .small .menu {
 	width: 100%;
-	transition: all .2s;
-	-moz-transition: all .2s;
-	-webkit-transition: all .2s;
-	-o-transition: all .2s;
+	transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
 }
 
 /* Jumbotron Info */
@@ -447,6 +447,17 @@ p {
 }
 .down-arrow a {
 	background: none !important;
+}
+.down-arrow .line {
+    position: absolute;
+    bottom: 0px;
+}
+.down-arrow .line:before {
+    border-left: 1px solid;
+    content: '';
+    height: 100%;
+    padding-top: 7px;
+    padding-bottom: 7px;
 }
 /* Media Queries */
 @media screen and (max-width:768px) {
