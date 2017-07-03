@@ -807,7 +807,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'validate' => 'css',
 						'title' => __('Scroll Down Icon', 'redux-framework-demo'),
 						'subtitle'  => __('A icon version of a scroll down button. Will be overridden by the image version.', 'redux-framework-demo'),
-						'desc' => __('eg: fa fa-mouse', 'redux-framework-demo'),
+						'desc' => __('eg: fa fa-hand-o-down', 'redux-framework-demo'),
 					),
 					array(
 						'id' => 'scroll-down-text',
