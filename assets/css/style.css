@@ -85,7 +85,6 @@ p {
 	margin: 0 0 1em;
 }
 .has-title {
-	text-transform: uppercase;
 	margin: 20px 0;
 }
 .has-title::before {
@@ -331,7 +330,6 @@ p {
 }
 .navbar-nav a {
 	padding: 27px .65em !important;
-	text-transform: uppercase;
 	text-shadow: none !important;
 	-moz-text-shadow: none !important;
 	-webkit-text-shadow: none !important;
