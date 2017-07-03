@@ -26,6 +26,24 @@ jQuery(document).ready(function($) {
 			$("#trans-menu").removeClass("small").addClass("large");
 		}
 	});
+
+	// Navbar Dropdown
+	function is_touch_device() {
+		return 'ontouchstart' in window // Works on most browsers 
+		|| navigator.maxTouchPoints; // Works on IE10/11 and Surface
+	};
+	if(!is_touch_device() && $('.navbar-toggle:hidden')){
+		$('.dropdown-menu', this).css('margin-top',0);
+		$('.dropdown').hover(function(){ 
+			$('.dropdown-toggle#dropdown-main', this).trigger('click');
+			// Uncomment below to make the parent item clickable.
+			$('.dropdown-toggle#dropdown-main', this).toggleClass("disabled"); 
+		});			
+	}
+	if(is_touch_device()) {
+		$('<span href="#" data-toggle="dropdown" id="dropdown-arrow" aria-haspopup="true" class="dropdown-toggle visible-xs glyphicon glyphicon-chevron-down"></span>').insertAfter('.dropdown-toggle#dropdown-main');
+		$('.dropdown-toggle#dropdown-main', this).toggleClass("disabled");
+	}
 		
 	// Height to Viewport
 	$(this).ready(function(e) {

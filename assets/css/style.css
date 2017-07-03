@@ -225,11 +225,6 @@ p {
 	border-radius: 0px !important;
 	transition: .2s ease-in-out all;
 }
-#header-menu .dropdown:hover .dropdown-menu {
-	display: block;
-	margin-top: 0;
-	transition: .2s ease-in-out all;
-}
 #header-menu .dropdown-menu li:hover .sub-menu {
     visibility: visible;
 }
@@ -240,6 +235,32 @@ p {
 #header-menu .nav .open a:hover,
 #header-menu .nav .open a:focus {
 	background: none !important;
+}
+#trans-menu .dropdown-menu {
+	border-radius: 0px !important;
+	border: none !important;
+	transition: .2s ease-in-out all;
+}
+#trans-menu .dropdown-menu .menu-item a {
+	padding: 5px .65em !important;
+}
+#trans-menu .dropdown-menu .menu-item a:last-child {
+	padding: 5px .65em !important;
+}
+#trans-menu .dropdown-toggle {
+	background: none !important;
+}
+.menu.visible-xs .dropdown-menu {
+	text-align: center;
+	padding-top: 0px;
+}
+.menu.visible-xs #dropdown-arrow.dropdown-toggle {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	border: 1px solid rgba(255,255,255,.1);
+	padding: .66em .5em !important;
+	cursor: pointer;
 }
 /* Toggle Info */
 .navbar-toggle {
@@ -293,12 +314,6 @@ p {
 .navbar-nav {
 	padding: 0px;
 }
-.hidden-xs .navbar-nav {
-	margin-right: -15px;
-}
-.visible-xs .navbar-nav {
-	padding: 0px !important;
-}
 .navbar-nav li {
 	margin: 0px;
 	padding: 0px;
@@ -328,11 +343,32 @@ p {
 .navbar-nav .menu-item a:hover {
 	transition: all .2s ease-in-out;
 }
-.visible-xs .navbar-nav a {
+.menu.hidden-xs .navbar-collapse.collapse {
+    padding-right: 0;
+}
+.menu.hidden-xs .navbar-nav .fa {
+	padding: 0px !important;
+	height: auto;
+	width: auto;
+}
+.menu.hidden-xs .navbar-nav .menu-phone {
+    padding-left: .65em;
+}
+.menu.visible-xs .navbar-nav {
+	padding: 0px !important;
+	margin-bottom: 0px !important;
+}
+.menu.visible-xs .navbar-nav a {
 	padding: .5em !important;
 }
-.visible-xs .navbar-nav .menu-item:last-child a {
+.menu.visible-xs .navbar-nav .menu-phone.menu-item:first-child a {
+	padding-top: 0px !important;
+}
+.menu.visible-xs .navbar-nav .menu-item:last-child a {
 	padding: .5em !important;
+}
+.menu.visible-xs .navbar-nav:last-child {
+	margin-top: 0px !important;
 }
 /* Sticky Info */
 .sticky {

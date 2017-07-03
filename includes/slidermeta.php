@@ -134,7 +134,7 @@
 			}
 		}
 		// Generates the HTML for the meta box
-		// @param object $post WordPress post object
+		/** @param object $post WordPress post object **/
 		public function add_meta_box_callback( $post ) {
 			wp_nonce_field( 'slider_text_data', 'slider_text_nonce' );
 			echo 'Set your slider text for this page.';
@@ -171,7 +171,7 @@
 				});
 			</script><?php
 		}
-		//Generates the field's HTML for the meta box.
+		// Generates the field's HTML for the meta box.
 		public function generate_fields( $post ) {
 			$output = '';
 			foreach ( $this->fields as $field ) {

@@ -11,3 +11,5 @@ Currently on version: 3.5!
 3. Options to change the H1 tag in the slider. Located in the SLIDER tab.
 
 4. Options to change the home page bottom posts font and background overlay: Now when the Blog Posts on Home Page is activated, new options will appear that will allow the ability to change the blog post font and background overlay. A slider to set the number of posts is added as well. Located in the CONTENT tab.
+
+5. Options organized, and added a metabox on Pages to show the transitional header if checked, only if the transitional header option is selected in Theme Options > HEADER. Also made the desktop dropdown navigation hover and a clickable arrow on mobile to allow for deeper and cleaner web linking.

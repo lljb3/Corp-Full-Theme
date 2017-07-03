@@ -4,6 +4,8 @@
 	if ( !empty( $kake_theme_option['logo-menu'] ) ) {
 		$logo = $kake_theme_option['logo-menu']['url'];
 	}
+    $chat = $kake_theme_option['site-header-chat'];
+    $phone = $kake_theme_option['site-header-phone'];
 ?>
 
 <!-- Header Information -->
@@ -34,6 +36,15 @@
 								'walker'		 => new wp_bootstrap_navwalker()
                             )
                         ); ?>
+                        <ul class="navbar-nav nav">
+                            <?php if( !empty( $chat ) ) { 
+                                echo '<script type="text/javascript">' . $chat . '</script>';
+                                echo '<li class="menu-chat menu-item"><i class="fa fa-comments-o" aria-hidden="true"></i></li>'; 
+                            } ?>
+                            <?php if( !empty( $phone ) ) { 
+                                echo '<li class="menu-phone menu-item"><a title="Call" href="tel:' . $phone . '"><i class="fa fa-mobile" aria-hidden="true" ></i></a></li>'; 
+                            } ?>
+                        <!-- end .navbar-nav --></ul>
                     <!-- end .collapse --></div>
                 <!-- end .menu --></div>
                 <!-- Small Menu -->
@@ -67,6 +78,15 @@
 								'walker'          => new wp_bootstrap_navwalker()
                             )
                         ); ?>
+                        <ul class="navbar-nav nav">
+                            <?php if( !empty( $chat ) ) { 
+                                echo '<script type="text/javascript">' . $chat . '</script>';
+                                echo '<li class="menu-chat menu-item"><i class="fa fa-comments-o" aria-hidden="true"></i></li>'; 
+                            } ?>
+                            <?php if( !empty( $phone ) ) { 
+                                echo '<li class="menu-phone menu-item"><a title="Call" href="tel:' . $phone . '"><i class="fa fa-mobile" aria-hidden="true" ></i></a></li>'; 
+                            } ?>
+                        <!-- end .navbar-nav --></ul>
                     <!-- end .collapse --></div>
                 <!-- end .visible-xs --></div>
         	<!-- end .col-md-12 --></div>

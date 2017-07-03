@@ -19,11 +19,16 @@ Template Name: Template - Jumbotron Page
  * @subpackage 	Starkers
  * @since 		Starkers 4.0
  */
+global $kake_theme_option; 
+$trans_opt = $kake_theme_option['transitional-header-button'];
+$trans_page_opt = get_post_meta($post->ID,'page_options_trans-header',true);
 ?>
-<?php global $kake_theme_option; if ( $kake_theme_option['transitional-header-button'] ) { ?>
-	<?php Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header', 'parts/shared/trans-header' ) ); ?>
+<?php if ( $trans_page_opt == 1 ) { ?> 
+    <?php if ( $kake_theme_option['transitional-header-button'] ) { ?>
+        <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header', 'parts/shared/trans-header' ) ); ?>
+    <?php } ?>
 <?php } else { ?>
-	<?php Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header' ) ); ?>
+    <?php Starkers_Utilities::get_template_parts( array( 'parts/shared/html-header', 'parts/shared/header' ) ); ?>
 <?php } ?>
 
 <!-- Jumbotron Information -->

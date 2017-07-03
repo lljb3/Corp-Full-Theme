@@ -84,6 +84,7 @@
 					$atts['href']   		= ! empty( $item->url ) ? $item->url : '';
 					$atts['data-toggle']	= 'dropdown';
 					$atts['class']			= 'dropdown-toggle';
+					$atts['id'] 			= 'dropdown-main';
 					$atts['aria-haspopup']	= 'true';
 				} else {
 					$atts['href'] = ! empty( $item->url ) ? $item->url : '';
