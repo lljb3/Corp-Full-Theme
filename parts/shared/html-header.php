@@ -18,7 +18,14 @@
 <head>
 
 <!-- Site Information -->
-<title><?php bloginfo(); ?><?php wp_title( '|' ); ?></title>
+<?php 
+	include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+	if( is_plugin_active( 'wordpress-seo/wp-seo.php' ) ) : 
+?>
+	<title><?php wp_title( '|' ); ?></title>
+<?php else : ?>
+	<title><?php bloginfo(); ?><?php wp_title( '|' ); ?></title>
+<?php endif; ?>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
