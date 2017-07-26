@@ -223,6 +223,9 @@ p {
 .open > .dropdown-menu {
 	transition: .2s all ease-in-out;
 }
+.dropdown-menu li.active a {
+	background: none !important;
+}
 #header-menu .dropdown.open .dropdown-menu {
 	display: table;
 }
@@ -443,7 +446,9 @@ p {
 	text-transform: none;
 	margin: 0px;
 	z-index: 1;
-    top: 0;
+	top: 0;
+	display: flex;
+	align-items: center;
 }
 .jumbotron .slider {
 	height: 100%;
@@ -482,7 +487,7 @@ p {
 }
 .jumbotron .slider-text {
 	width: 100%;
-	margin-top: 5em;
+	margin-top: -5em;
 	z-index: 3;
 	position: absolute;
 }
