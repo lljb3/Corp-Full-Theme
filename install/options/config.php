@@ -984,7 +984,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 					array(
 						'id' => 'color-blog-posts-background',
 						'type'	=> 'background',
-						'output' => array('.home #content #posts-section .post-item'),
+						'output' => array('.home #content #posts-section .post-item,.page-template-template-frontpage #content #posts-section .post-item'),
 						'title'	=> __('Blog Post Background', 'redux-framework-demo'),
 						'subtitle'	=> __('Handles read more image background color wash (default: #333)', 'redux-framework-demo'),
 						'default'	=> array( 'background-color' => '#333' ),
@@ -994,6 +994,26 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'background-image'	=> false,
 						'transparent'	=> false,
 						'background-size'	=> false,
+					),
+					array(
+						'id' => 'color-blog-posts-header',
+						'type'	=> 'color',
+						'title'	=> __('Blog Post Header Color', 'redux-framework-demo'), 
+						'subtitle'	=> __('Handles read more button border colors (default: #70b9a0)', 'redux-framework-demo'),
+						'default'	=> '#70b9a0',
+						'validate'	=> 'color',
+						'output' => array('.home #content #posts-section .post-item .has-title,.page-template-template-frontpage #content #posts-section .post-item .has-item'), // An array of CSS selectors to apply this font style to dynamically
+						'transparent'	=> false,
+					),
+					array(
+						'id' => 'color-blog-posts-header-hover',
+						'type'	=> 'color',
+						'title'	=> __('Blog Post Header Hover Color', 'redux-framework-demo'), 
+						'subtitle'	=> __('Handles read more button border colors (default: #70b9a0)', 'redux-framework-demo'),
+						'default'	=> '#70b9a0',
+						'validate'	=> 'color',
+						'output' => array('.home #content #posts-section .post-item .has-title:hover,.page-template-template-frontpage #content #posts-section .post-item .has-item:hover'), // An array of CSS selectors to apply this font style to dynamically
+						'transparent'	=> false,
 					),
 					array(
 						'id' => 'color-blog-posts-read-more-bg',
@@ -1109,6 +1129,14 @@ if (!class_exists('Redux_Framework_sample_config')) {
 	            'icon'      => 'el el-wrench',
 	            'fields'    => array(
 					array(
+						'id' => 'footer-sitemap',
+						'type'	=> 'checkbox',
+						'title'	=> __('Show Sitemap on Footer', 'redux-framework-demo'),
+						'subtitle'	=> __('', 'redux-framework-demo'),
+						'desc'	=> __('', 'redux-framework-demo'),
+						'default' => 0
+					),
+					array(
 						'id'	=> 'color-footer-background',
 						'type'	=> 'background',
 						'output'	=> array('#footer-sitemap'),
@@ -1201,6 +1229,14 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'desc'	=> __('', 'redux-framework-demo'),
 						'default'	=> 1
 					),
+					// Social Media Options
+					array(
+						'id'   =>'section-start',
+						'title' => __('Social Media', 'redux-framework-demo'),
+						'subtitle' => __('Add social media links here.', 'redux-framework-demo'),
+						'type' => 'section',
+						'indent' => true,
+					),
 					array(
 						'id'	=> 'social-facebook',
 						'type'	=> 'text',
@@ -1281,6 +1317,11 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'desc'	=> __('', 'redux-framework-demo'),
 						//'validate'	=> 'url',
 						'default'	=> '',
+					),
+					array(
+						'id'     => 'section-end',
+						'type'   => 'section',
+						'indent' => false,
 					),
 				)
 			);

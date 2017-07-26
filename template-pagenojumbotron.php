@@ -38,7 +38,6 @@ $trans_page_opt = get_post_meta($post->ID,'page_options_trans-header',true);
 			<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
             <h2 class="has-title text-center hidden"><?php the_title(); ?></h2>
             <div class="has-text"><?php the_content(); ?></div>
-            <div class="hidden"><?php comments_template( '', true ); ?></div>
             <?php endwhile; ?>
         <!-- end .col-md-10 --></div>
     <!-- end .row --></div>

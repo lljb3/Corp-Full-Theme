@@ -11,121 +11,122 @@
 	$youtube = $kake_theme_option['social-youtube'];
 	$skype = $kake_theme_option['social-skype'];
 	$yelp = $kake_theme_option['social-yelp'];
-	
 ?>
 	
-<!-- Back to Top -->
 <?php if ( $kake_theme_option['footer-show-up-button'] ) { ?>
+	<!-- Back to Top -->
 	<a data-scroll href="#totop" class="totop fadeOut"><span class="glyphicon glyphicon-triangle-top"></span></a>
 <?php } ?>
 
-<!-- Sitemap Information -->
-<div class="container-fluid hidden" id="footer-sitemap">
-	<div class="row">
-    	<?php $sitemap1 = has_nav_menu('sitemap1'); if ( $sitemap1 ) { ?>
-			<div class="col-sm-2 split">
-				<?php wp_nav_menu( 
-					array(
-						'theme_location'	=> 'sitemap1',
-						'container'	=> 'ul',
-						'menu_class'	=> 'list-unstyled',
-						'echo'	=> true,
-						'link_before'	=> '<span>',
-						'link_after'	=> '</span>',
-						'items_wrap'	=> '<ul class="list-unstyled">%3$s</ul>',
-						'depth'	=> 0,
-						'walker'	=> new wp_bootstrap_navwalker()
-					)
-				); ?>
-			<!-- end .split --></div>
-        <?php } ?>
-    	<?php $sitemap2 = has_nav_menu('sitemap2'); if ( $sitemap2 ) { ?>
-			<div class="col-sm-2 split">
-				<?php wp_nav_menu( 
-					array(
-						'theme_location'	=> 'sitemap2',
-						'container'	=> 'ul',
-						'menu_class'	=> 'list-unstyled',
-						'echo'	=> true,
-						'link_before'	=> '<span>',
-						'link_after'	=> '</span>',
-						'items_wrap'	=> '<ul class="list-unstyled">%3$s</ul>',
-						'depth'	=> 0,
-						'walker'	=> new wp_bootstrap_navwalker()
-					)
-				); ?>
-			<!-- end .split--></div>
-        <?php } ?>
-    	<?php $sitemap3 = has_nav_menu('sitemap3'); if ( $sitemap3 ) { ?>
-			<div class="col-sm-2 split">
-				<?php wp_nav_menu( 
-					array(
-						'theme_location'	=> 'sitemap3',
-						'container'	=> 'ul',
-						'menu_class'	=> 'list-unstyled',
-						'echo'	=> true,
-						'link_before'	=> '<span>',
-						'link_after'	=> '</span>',
-						'items_wrap'	=> '<ul class="list-unstyled">%3$s</ul>',
-						'depth'	=> 0,
-						'walker'	=> new wp_bootstrap_navwalker()
-					)
-				); ?>
-			<!-- end .split --></div>
-        <?php } ?>
-    	<?php $sitemap4 = has_nav_menu('sitemap4'); if ( $sitemap4 ) { ?>
-			<div class="col-sm-2 split">
-				<?php wp_nav_menu( 
-					array(
-						'theme_location'	=> 'sitemap4',
-						'container'	=> 'ul',
-						'menu_class'	=> 'list-unstyled',
-						'echo'	=> true,
-						'link_before'	=> '<span>',
-						'link_after'	=> '</span>',
-						'items_wrap'	=> '<ul class="list-unstyled">%3$s</ul>',
-						'depth'	=> 0,
-						'walker'	=> new wp_bootstrap_navwalker()
-					)
-				); ?>
-			<!-- end .split --></div>
-        <?php } ?>
-    	<?php $sitemap5 = has_nav_menu('sitemap5'); if ( $sitemap5 ) { ?>
-			<div class="col-sm-2 split">
-				<?php wp_nav_menu( 
-					array(
-						'theme_location'	=> 'sitemap5',
-						'container'	=> 'ul',
-						'menu_class'	=> 'list-unstyled',
-						'echo'	=> true,
-						'link_before'	=> '<span>',
-						'link_after'	=> '</span>',
-						'items_wrap'	=> '<ul class="list-unstyled">%3$s</ul>',
-						'depth'	=> 0,
-						'walker'	=> new wp_bootstrap_navwalker()
-					)
-				); ?>
-			<!-- end .split --></div>
-        <?php } ?>
-    	<?php $sitemap6 = has_nav_menu('sitemap6'); if ( $sitemap6 ) { ?>
-			<div class="col-sm-2 split">
-				<?php wp_nav_menu( 
-					array(
-						'theme_location'	=> 'sitemap6',
-						'container'	=> 'ul',
-						'menu_class'	=> 'list-unstyled',
-						'echo'	=> true,
-						'link_before'	=> '<span>',
-						'link_after'	=> '</span>',
-						'items_wrap'	=> '<ul class="list-unstyled">%3$s</ul>',
-						'depth'	=> 0,
-						'walker'	=> new wp_bootstrap_navwalker()
-					)
-				); ?>
-			<!-- end .split --></div>
-        <?php } ?>
-    <!-- end .row --></div>
-<!-- end #footer-sitemap --></div>
+<?php if ( $kake_theme_option['footer-sitemap'] ) { ?>
+	<!-- Sitemap Information -->
+	<div class="container-fluid" id="footer-sitemap">
+		<div class="row">
+			<?php $sitemap1 = has_nav_menu('sitemap1'); if ( $sitemap1 ) { ?>
+				<div class="col-sm-2 split">
+					<?php wp_nav_menu( 
+						array(
+							'theme_location'	=> 'sitemap1',
+							'container'	=> 'ul',
+							'menu_class'	=> 'list-unstyled',
+							'echo'	=> true,
+							'link_before'	=> '<span>',
+							'link_after'	=> '</span>',
+							'items_wrap'	=> '<ul class="list-unstyled">%3$s</ul>',
+							'depth'	=> 0,
+							'walker'	=> new wp_bootstrap_navwalker()
+						)
+					); ?>
+				<!-- end .split --></div>
+			<?php } ?>
+			<?php $sitemap2 = has_nav_menu('sitemap2'); if ( $sitemap2 ) { ?>
+				<div class="col-sm-2 split">
+					<?php wp_nav_menu( 
+						array(
+							'theme_location'	=> 'sitemap2',
+							'container'	=> 'ul',
+							'menu_class'	=> 'list-unstyled',
+							'echo'	=> true,
+							'link_before'	=> '<span>',
+							'link_after'	=> '</span>',
+							'items_wrap'	=> '<ul class="list-unstyled">%3$s</ul>',
+							'depth'	=> 0,
+							'walker'	=> new wp_bootstrap_navwalker()
+						)
+					); ?>
+				<!-- end .split--></div>
+			<?php } ?>
+			<?php $sitemap3 = has_nav_menu('sitemap3'); if ( $sitemap3 ) { ?>
+				<div class="col-sm-2 split">
+					<?php wp_nav_menu( 
+						array(
+							'theme_location'	=> 'sitemap3',
+							'container'	=> 'ul',
+							'menu_class'	=> 'list-unstyled',
+							'echo'	=> true,
+							'link_before'	=> '<span>',
+							'link_after'	=> '</span>',
+							'items_wrap'	=> '<ul class="list-unstyled">%3$s</ul>',
+							'depth'	=> 0,
+							'walker'	=> new wp_bootstrap_navwalker()
+						)
+					); ?>
+				<!-- end .split --></div>
+			<?php } ?>
+			<?php $sitemap4 = has_nav_menu('sitemap4'); if ( $sitemap4 ) { ?>
+				<div class="col-sm-2 split">
+					<?php wp_nav_menu( 
+						array(
+							'theme_location'	=> 'sitemap4',
+							'container'	=> 'ul',
+							'menu_class'	=> 'list-unstyled',
+							'echo'	=> true,
+							'link_before'	=> '<span>',
+							'link_after'	=> '</span>',
+							'items_wrap'	=> '<ul class="list-unstyled">%3$s</ul>',
+							'depth'	=> 0,
+							'walker'	=> new wp_bootstrap_navwalker()
+						)
+					); ?>
+				<!-- end .split --></div>
+			<?php } ?>
+			<?php $sitemap5 = has_nav_menu('sitemap5'); if ( $sitemap5 ) { ?>
+				<div class="col-sm-2 split">
+					<?php wp_nav_menu( 
+						array(
+							'theme_location'	=> 'sitemap5',
+							'container'	=> 'ul',
+							'menu_class'	=> 'list-unstyled',
+							'echo'	=> true,
+							'link_before'	=> '<span>',
+							'link_after'	=> '</span>',
+							'items_wrap'	=> '<ul class="list-unstyled">%3$s</ul>',
+							'depth'	=> 0,
+							'walker'	=> new wp_bootstrap_navwalker()
+						)
+					); ?>
+				<!-- end .split --></div>
+			<?php } ?>
+			<?php $sitemap6 = has_nav_menu('sitemap6'); if ( $sitemap6 ) { ?>
+				<div class="col-sm-2 split">
+					<?php wp_nav_menu( 
+						array(
+							'theme_location'	=> 'sitemap6',
+							'container'	=> 'ul',
+							'menu_class'	=> 'list-unstyled',
+							'echo'	=> true,
+							'link_before'	=> '<span>',
+							'link_after'	=> '</span>',
+							'items_wrap'	=> '<ul class="list-unstyled">%3$s</ul>',
+							'depth'	=> 0,
+							'walker'	=> new wp_bootstrap_navwalker()
+						)
+					); ?>
+				<!-- end .split --></div>
+			<?php } ?>
+		<!-- end .row --></div>
+	<!-- end #footer-sitemap --></div>
+<?php } ?>
 
 <!-- Footer Information -->	
 <footer id="footer-container">

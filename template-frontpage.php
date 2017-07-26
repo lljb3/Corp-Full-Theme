@@ -66,25 +66,25 @@ $trans_page_opt = get_post_meta($post->ID,'page_options_trans-header',true);
         <div class="down-arrow">
             <?php $scrdwnimg = $kake_theme_option['scroll-down-icon-image']['url']; $scrdwnicon = $kake_theme_option['scroll-down-icon-html']; $scrdwntxt = $kake_theme_option['scroll-down-text']; $scrdwnline = $kake_theme_option['scroll-down-line']; ?>
             <?php if( !empty( $scrdwnimg ) && empty( $scrdwnicon ) ) { ?>
-                <a href="#content" data-scroll><img src="<?php echo $scrdwnimg ?>" alt="" /></a>
+                <a href="#content" data-scroll><img src="<?php echo $scrdwnimg ?>" alt="" /></a><br />
             <?php } elseif( !empty( $scrdwnicon ) ) { ?>
                 <a href="#content" data-scroll><i class="<?php echo $scrdwnicon ?>"></i></a>
             <?php } if( !empty( $scrdwntxt ) ) { ?>
-                <br /><a href="#content" class="scroll-text" data-scroll><span><?php echo $scrdwntxt; ?></span></a>
+                <a href="#content" class="scroll-text" data-scroll><span><?php echo $scrdwntxt; ?></span></a><br />
             <?php } if( ( $scrdwnline ) ) { ?>
-                <br /><span class="line"></span>
+                <span class="line"></span>
             <?php } ?>
         </div>
     <!-- end .slider-text --></div>
+    <?php $jumboimg = wp_get_attachment_url( get_post_thumbnail_id() ); ?>
     <div class="slider">
         <?php $slidername = get_post_meta($post->ID, "layer_slider_post_class", true); ?>
-        <?php layerslider($slidername); ?>
+        <?php if( !empty( $slidername ) ) { layerslider($slidername); } else { echo '<div class="jumbotron-img" style="background-image:url(' . $jumboimg . ');"></div>'; } ?>
     <!-- end .slider --></div>
     <div class="slider-wash"></div>
 <!-- end .jumbotron --></div>
 
 <!-- Content Information -->
-
 <div class="container-fluid" id="content">
     <div class="row">
         <div class="col-md-12">
@@ -104,8 +104,8 @@ $trans_page_opt = get_post_meta($post->ID,'page_options_trans-header',true);
                     while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
                     <div class="col-md-4">
                         <div class="post-item">
-                            <?php if (has_post_thumbnail()) { $feat_image_url = wp_get_attachment_url(get_post_thumbnail_id()); } ?>
-                            <div class="post-thumbnail" style="background-image:url(<?php echo $feat_image_url; ?>);opacity:.3;"></div>
+                            <?php $feat_image_url = wp_get_attachment_url( get_post_thumbnail_id() ); ?>
+                            <div class="post-thumbnail" <?php if ( has_post_thumbnail() ) { echo 'style="background-image:url(' . $feat_image_url . ');opacity:.3;"'; } ?>></div>
                             <h3 class="has-title">
                                 <a href="<?php the_permalink(); ?>" title="Read more"><?php the_title(); ?></a>
                             <!-- end .has-title --></h3>

@@ -66,19 +66,20 @@ $trans_page_opt = get_post_meta($post->ID,'page_options_trans-header',true);
         <div class="down-arrow">
             <?php $scrdwnimg = $kake_theme_option['scroll-down-icon-image']['url']; $scrdwnicon = $kake_theme_option['scroll-down-icon-html']; $scrdwntxt = $kake_theme_option['scroll-down-text']; $scrdwnline = $kake_theme_option['scroll-down-line']; ?>
             <?php if( !empty( $scrdwnimg ) && empty( $scrdwnicon ) ) { ?>
-                <a href="#content" data-scroll><img src="<?php echo $scrdwnimg ?>" alt="" /></a>
+                <a href="#content" data-scroll><img src="<?php echo $scrdwnimg ?>" alt="" /></a><br />
             <?php } elseif( !empty( $scrdwnicon ) ) { ?>
                 <a href="#content" data-scroll><i class="<?php echo $scrdwnicon ?>"></i></a>
             <?php } if( !empty( $scrdwntxt ) ) { ?>
-                <br /><a href="#content" class="scroll-text" data-scroll><span><?php echo $scrdwntxt; ?></span></a>
+                <a href="#content" class="scroll-text" data-scroll><span><?php echo $scrdwntxt; ?></span></a><br />
             <?php } if( ( $scrdwnline ) ) { ?>
-                <br /><span class="line"></span>
+                <span class="line"></span>
             <?php } ?>
         </div>
     <!-- end .slider-text --></div>
+    <?php $jumboimg = wp_get_attachment_url( get_post_thumbnail_id() ); ?>
     <div class="slider">
         <?php $slidername = get_post_meta($post->ID, "layer_slider_post_class", true); ?>
-        <?php layerslider($slidername); ?>
+        <?php if( !empty( $slidername ) ) { layerslider($slidername); } else { echo '<div class="jumbotron-img" style="background-image:url(' . $jumboimg . ');"></div>'; } ?>
     <!-- end .slider --></div>
     <div class="slider-wash"></div>
 <!-- end .jumbotron --></div>
@@ -90,7 +91,6 @@ $trans_page_opt = get_post_meta($post->ID,'page_options_trans-header',true);
 			<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
             <h2 class="has-title text-center hidden"><?php the_title(); ?></h2>
             <div class="has-text"><?php the_content(); ?></div>
-            <div class="hidden"><?php comments_template( '', true ); ?></div>
             <?php endwhile; ?>
         <!-- end .col-md-10 --></div>
     <!-- end .row --></div>
