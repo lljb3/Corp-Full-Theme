@@ -505,7 +505,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 					array(
 						'id'	=> 'color-header-background',
 						'type'	=> 'background',
-						'output'	=> array('#trans-menu.small, header .navbar, header .navbar .navbar-nav > ul > li ul.sub-menu, header .navbar nav > div > ul > li ul.sub-menu, #header-menu, #trans-menu.small, header .dropdown-menu'),
+						'output'	=> array('#trans-menu.small, header .navbar, header .navbar .navbar-nav > ul > li ul.sub-menu, header .navbar nav > div > ul > li ul.sub-menu, #header-menu, #trans-menu .visible-xs .navbar-collapse, header .dropdown-menu'),
 						'title'	=> __('Site Header Background Color', 'redux-framework-demo'),
 						'subtitle'	=> __('Site Header Background Color (default: #333333)', 'redux-framework-demo'),
 						'default'	=> array( 'background-color' => '#333333' ),
