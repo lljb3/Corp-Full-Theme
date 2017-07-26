@@ -1,7 +1,17 @@
 # Corp-Full-Theme
 Kake Multimedia's WordPress theme for corporations and small businesses.
 
-Currently on version: 3.5!
+Currently on version: 3.6!
+
+## What's new in 3.5?
+
+1. Added blog post header colors now. Will be able to control the color of the header colors in the CONTENT tab.
+
+2. Added jumbotron conditions so if you don't have a slider in the jumbotron and just want to use an image, you can now do so with the featured image attached. Saves load time by not needing a slider for one image. Located on a page by page basis.
+
+3. Added footer sitemap conditions so if you desire a sitemap, it is now toggable in the FOOTER tab.
+
+4. Other various CSS fixes and cleanups.
 
 ## What's new in 3.5?
 1. Chat and phone buttons in header: Now you can input chat code in a new JavaScript section and use the phone number field to generate chat and phone buttons. These are located in the HEADER tab.
