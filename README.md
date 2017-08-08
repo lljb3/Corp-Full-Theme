@@ -3,7 +3,7 @@ Kake Multimedia's WordPress theme for corporations and small businesses.
 
 Currently on version: 3.6!
 
-## What's new in 3.5?
+## What's new in 3.6?
 
 1. Added blog post header colors now. Will be able to control the color of the header colors in the CONTENT tab.
 
@@ -13,7 +13,7 @@ Currently on version: 3.6!
 
 4. Other various CSS fixes and cleanups.
 
-## What's new in 3.5?
+## What's new in 3.6?
 1. Chat and phone buttons in header: Now you can input chat code in a new JavaScript section and use the phone number field to generate chat and phone buttons. These are located in the HEADER tab.
 
 2. Options to change the header when set to transitions on: Now when the Transitional Header is activated, new options will appear that will show the ability to change the header colors before transition change on scroll. Located in the HEADER tab.
