@@ -13,6 +13,8 @@ Currently on version: 3.6!
 
 4. Other various CSS fixes and cleanups.
 
+5. Updated Layerslider to version 6.5.8.
+
 ## What's new in 3.6?
 1. Chat and phone buttons in header: Now you can input chat code in a new JavaScript section and use the phone number field to generate chat and phone buttons. These are located in the HEADER tab.
 
