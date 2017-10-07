@@ -104,7 +104,8 @@ $trans_page_opt = get_post_meta($post->ID,'page_options_trans-header',true);
                     <?php // Display blog posts on any page @ http://m0n.co/l
                     $temp = $wp_query; $wp_query = null;
                     $postsno = $kake_theme_option['blog-posts-number-of'];
-                    $wp_query = new WP_Query(); $wp_query->query('showposts=' . $postsno . '&paged='.$paged);
+                    $categories = $kake_theme_option['blog-posts-category'];
+                    $wp_query = new WP_Query(); $wp_query->query('showposts=' . $postsno . '&paged='. $paged . '&taxonomy=' . $categories);
                     while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
                     <div class="col-md-4">
                         <div class="post-item">
