@@ -1,9 +1,9 @@
 # Corp-Full-Theme
 Kake Multimedia's WordPress theme for corporations and small businesses.
 
-Currently on version: 3.6!
+Currently on version: 3.6.1!
 
-## What's new in 3.6?
+## What's new in 3.6.1?
 
 1. Added blog post header colors now. Will be able to control the color of the header colors in the CONTENT tab.
 
@@ -14,6 +14,10 @@ Currently on version: 3.6!
 4. Other various CSS fixes and cleanups.
 
 5. Updated Layerslider to version 6.5.8.
+
+6. Updated options to show maps API. Will update with color options in next version.
+
+7. Updated category options in blog options. Still needs tweaking.
 
 ## What's new in 3.6?
 1. Chat and phone buttons in header: Now you can input chat code in a new JavaScript section and use the phone number field to generate chat and phone buttons. These are located in the HEADER tab.
