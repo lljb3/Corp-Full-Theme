@@ -1124,6 +1124,27 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'type'   => 'section',
 						'indent' => false,
 					),
+					array(
+						'id'   =>'section-start',
+						'title' => __('Map Options', 'redux-framework-demo'),
+						'subtitle' => __('Update the map API key and visuals with these options.', 'redux-framework-demo'),
+						'type' => 'section',
+						'indent' => true,
+					),
+					array(
+						'id'	=> 'map-options-api-key',
+						'type'	=> 'text',
+						'title'	=> __('Google Maps API Key', 'redux-framework-demo'),
+						'subtitle'	=> __('', 'redux-framework-demo'),
+						'desc'	=> __('', 'redux-framework-demo'),
+						//'validate'	=> 'url',
+						'default'	=> '',
+					),
+					array(
+						'id'     => 'section-end',
+						'type'   => 'section',
+						'indent' => false,
+					),
 				),
 			);
             
