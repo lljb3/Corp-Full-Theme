@@ -616,6 +616,16 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'default'	=> '',
 					),
 					array(
+						'id'	=> 'site-header-chat-click',
+						'type'	=> 'ace_editor',
+						'mode'	=> 	'javascript',
+						'theme'	=> 	'chrome',
+						'title'	=> __('Header Chat onClick Code', 'redux-framework-demo'),
+						'subtitle'	=> __('Script that fills out onClick chat code of link tag.', 'redux-framework-demo'),
+						'desc'	=> __('Insert ONLY the code in the onClick attribute of the link tag (e.g.: onClick="COPY_EVERYTHING_IN_BETWEEN_THESE_QUOTES" Important: Do not put script tags! This will break the footer file!', 'redux-framework-demo'),
+						'default'	=> '',
+					),
+					array(
 						'id'     => 'section-end',
 						'type'   => 'section',
 						'indent' => false,

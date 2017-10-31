@@ -5,6 +5,7 @@
 		$logo = $kake_theme_option['logo-menu']['url'];
 	}
     $chat = $kake_theme_option['site-header-chat'];
+    $chat_click = $kake_theme_option['site-header-chat-click'];
     $phone = $kake_theme_option['site-header-phone'];
 ?>
 
@@ -81,7 +82,7 @@
                         <ul class="navbar-nav nav">
                             <?php if( !empty( $chat ) ) { 
                                 echo '<script type="text/javascript">' . $chat . '</script>';
-                                echo '<li class="menu-chat menu-item"><i class="fa fa-comments-o" aria-hidden="true"></i></li>'; 
+                                echo '<li class="menu-chat menu-item"><a title="Chat" onclick="' . $chat_click . '"><i class="fa fa-comments-o" aria-hidden="true"></a></i></li>'; 
                             } ?>
                             <?php if( !empty( $phone ) ) { 
                                 echo '<li class="menu-phone menu-item"><a title="Call" href="tel:' . $phone . '"><i class="fa fa-mobile" aria-hidden="true" ></i></a></li>'; 
