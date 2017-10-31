@@ -26,7 +26,7 @@ Currently on version: 3.6.1! 3.7 coming soon!
 7. Updated category options in blog options. Still needs tweaking.
 
 ## What's new in 3.6?
-1. Chat and phone buttons in header: Now you can input chat code in a new JavaScript section and use the phone number field to generate chat and phone buttons. These are located in the HEADER tab.
+1. Chat and phone buttons in header: Now you can input chat code in a new JavaScript section and use the phone number field to generate chat and phone buttons. These are located in the HEADER tab. Updated to newer Google Analytics standards.
 
 2. Options to change the header when set to transitions on: Now when the Transitional Header is activated, new options will appear that will show the ability to change the header colors before transition change on scroll. Located in the HEADER tab.
 
