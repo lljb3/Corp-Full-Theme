@@ -16,5 +16,5 @@
 
         /* Theme CSS */
 		wp_register_style( 'screen', get_stylesheet_directory_uri().'/style.css', '', '', 'screen' );
-        wp_enqueue_style( 'screen' );
+		wp_enqueue_style( 'screen' );
 	}
