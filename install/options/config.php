@@ -321,11 +321,11 @@ if (!class_exists('Redux_Framework_sample_config')) {
 					array(
 						'id'	=> 'custom-scripts',
 						'type'	=> 'ace_editor',
-						'mode'	=> 	'javascript',
+						'mode'	=> 	'markdown',
 						'theme'	=> 	'chrome',
 						'title'	=> __('Custom Scripts (Google Analytics etc.)', 'redux-framework-demo'),
-						'subtitle'	=> __('Inline scripts right before closing <strong>&lt;/body&gt;</strong> in generated script tags.', 'redux-framework-demo'),
-						'desc'	=> __('Use "jQuery" selector, instead of "$" shorthand. Important: Do not put script tags! This will break the footer file!', 'redux-framework-demo'),
+						'subtitle'	=> __('Inline scripts right before closing <strong>&lt;/body&gt;</strong>.', 'redux-framework-demo'),
+						'desc'	=> __('Use "jQuery" selector, instead of "$" shorthand.', 'redux-framework-demo'),
 						'default'	=> '',
 					),
 				)

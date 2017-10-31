@@ -7,7 +7,7 @@
 <?php wp_footer(); ?>
 
 <!-- Custom JavaScript -->
-<?php echo '<script type="text/javascript">' . $custom_scripts . '</script>'; ?>
+<?php echo $custom_scripts; ?>
 <!-- RequireJS -->
 </body>
 
