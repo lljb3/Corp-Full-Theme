@@ -107,7 +107,11 @@ $trans_page_opt = get_post_meta($post->ID,'page_options_trans-header',true);
                     $categories = $kake_theme_option['blog-posts-category'];
                     $wp_query = new WP_Query(); $wp_query->query('showposts=' . $postsno . '&paged='. $paged . '&taxonomy=' . $categories);
                     while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
-                    <div class="col-md-4">
+                    <?php if( $postsno == 4 || $postsno == 8 ) { ?>
+                        <div class="col-md-3">
+                    <?php } else { ?>
+                        <div class="col-md-4">
+                    <?php } ?>
                         <div class="post-item">
                             <?php $feat_image_url = wp_get_attachment_url( get_post_thumbnail_id() ); ?>
                             <div class="post-thumbnail" <?php if ( has_post_thumbnail() ) { echo 'style="background-image:url(' . $feat_image_url . ');opacity:.3;"'; } ?>></div>
