@@ -996,7 +996,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'type' => 'text',
 						'title' => __('Front Page Blog Posts Category', 'redux-framework-demo'),
 						'subtitle'  => __('Write which category of blog posts that will appear on front page.', 'redux-framework-demo'),
-						'desc' => __('eg: fa fa-hand-o-down', 'redux-framework-demo'),
+						'desc' => __('eg: category1, category2, ...', 'redux-framework-demo'),
 					),
 					array(
 						'id' => 'color-blog-posts-background',
