@@ -95,7 +95,7 @@ $trans_page_opt = get_post_meta($post->ID,'page_options_trans-header',true);
             <div class="row" id="content-section">
                 <div class="col-md-10 col-md-offset-1">
                     <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-                    <div class="has-text"><?php the_content(); ?></div>
+                        <div class="has-text"><?php the_content(); ?></div>
                     <?php endwhile; ?>
                 <!-- end .col-md-10 --></div>
             <!-- end .row --></div>
@@ -104,8 +104,9 @@ $trans_page_opt = get_post_meta($post->ID,'page_options_trans-header',true);
                     <?php // Display blog posts on any page @ http://m0n.co/l
                     $temp = $wp_query; $wp_query = null;
                     $postsno = $kake_theme_option['blog-posts-number-of'];
-                    $categories = $kake_theme_option['blog-posts-category'];
-                    $wp_query = new WP_Query(); $wp_query->query('showposts=' . $postsno . '&paged='. $paged . '&taxonomy=' . $categories);
+                    $cat_array = $kake_theme_option['blog-posts-category'];
+                    $categories = str_replace(', ','+',$cat_array);
+                    $wp_query = new WP_Query(); $wp_query->query('showposts=' . $postsno . '&paged='. $paged . '&category_name=' . $categories);
                     while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
                     <?php if( $postsno == 4 || $postsno == 8 ) { ?>
                         <div class="col-md-3">
