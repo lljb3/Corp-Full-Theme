@@ -33,10 +33,26 @@ $trans_page_opt = get_post_meta($post->ID,'page_options_trans-header',true);
 
 <!-- Section Container Information -->
 <main class="container-fluid" id="section-container">
+	<?php 
+		$args = array(
+			'post_type'=>'page',
+			'post_parent'=>$post->ID,
+			'order'=>'ASC',
+			'orderby'=>'menu_order',
+			'posts_per_page'=>-1,
+		);
+		$parent = new WP_Query($args); 
+	?>
     <div class="row">
         <div class="col-md-12">
-			<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-			<div class="has-text"><?php the_content(); ?></div>
+			<?php if ( $parent->have_posts() ) while ( $parent->have_posts() ) : $parent->the_post(); ?>
+				<section class="container-fluid" id="section">
+					<div class="row">
+						<div class="col-md-12">
+							<?php the_content(); ?>
+						<!-- end .col-md-12 --></div>
+					<!-- end .row --></div>
+				<!-- end #section --></section>
 			<?php endwhile; ?>
         <!-- end .col-md-12 --></div>
     <!-- end .row --></div>
