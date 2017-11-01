@@ -36,8 +36,8 @@ $trans_page_opt = get_post_meta($post->ID,'page_options_trans-header',true);
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
 			<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-            <h2 class="has-title text-center hidden"><?php the_title(); ?></h2>
-            <div class="has-text"><?php the_content(); ?></div>
+                <h2 class="has-title text-center hidden"><?php the_title(); ?></h2>
+                <div class="has-text"><?php the_content(); ?></div>
             <?php endwhile; ?>
         <!-- end .col-md-10 --></div>
     <!-- end .row --></div>
