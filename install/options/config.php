@@ -243,7 +243,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 					array(
 						'id'	=> 'color-content-background',
 						'type'	=> 'background',
-						'output'	=> array('#content'),
+						'output'	=> array('#content,#section-container section'),
 						'title'	=> __('Content Background Color', 'redux-framework-demo'),
 						'subtitle'	=> __('Content Background Color (default: #f8f8f8)', 'redux-framework-demo'),
 						'default'	=> array( 'background-color' => '#f8f8f8' ),
