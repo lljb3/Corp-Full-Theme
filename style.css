@@ -61,10 +61,12 @@ body {
 
 body,input,textarea { 
 	/* We strongly recommend you declare font-weight using numerical values, but check to see which weights you're exporting first */
+	font-size: 16.5px;
+	line-height: 1.42;
 }
 
 h1,h2,h3,h4,h5,h6 {
-	font-weight:bold; /* This helps to identify headings at the initial build stage, but you should write something more precise later on */
+	font-weight: bold; /* This helps to identify headings at the initial build stage, but you should write something more precise later on */
 }
 
 /* ---------------------------------------------------------------------------------------------------------- 
@@ -73,9 +75,15 @@ h1,h2,h3,h4,h5,h6 {
 
 /* 400 and up */
 @media screen and (min-width:400px) {
-	{ /* Place your styles here for all widths greater than 400px */ }
+	body,input,text {
+		font-size: 16.5px;
+		line-height: 1.42;
+	}
 }
 /* Retina Display */
 @media screen and (-webkit-min-device-pixel-ratio:2) {
-	{ /* Place your styles here for all 'Retina' screens */ }
+	body,input,text {
+		font-size: 16.5px;
+		line-height: 1.42;
+	}
 }
