@@ -1,7 +1,7 @@
 # Corp-Full-Theme
 Kake Multimedia's WordPress theme for corporations and small businesses.
 
-Currently on version: 3.6.1! 3.7 coming soon!
+Currently on version: 3.6.3! 3.7 coming soon!
 
 ## What's coming in 3.7?
 
