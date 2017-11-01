@@ -613,6 +613,9 @@ p {
 	padding-left: 0;
 	padding-right: 0;
 }
+#section-container section {
+	z-index: 10;
+}
 /* Home Posts */
 .home #content #posts-section .post-item,
 .home #content #posts-section .post-thumbnail,
