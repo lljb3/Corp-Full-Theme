@@ -603,6 +603,18 @@ p {
 #content .no-padding-right {
 	padding-right: 0;
 }
+@media screen and (max-width:768px) {
+	#content .no-padding {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	#content .no-padding-left {
+		padding-left: 15px;
+	}	
+	#content .no-padding-right {
+		padding-right: 15px;
+	}
+}
 /* Section Info */
 #section-container {
 	display: block;
@@ -635,6 +647,18 @@ p {
 }
 #section-container .no-padding-right {
 	padding-right: 0;
+}
+@media screen and (max-width:768px) {
+	#section-container .no-padding {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	#section-container .no-padding-left {
+		padding-left: 15px;
+	}	
+	#section-container .no-padding-right {
+		padding-right: 15px;
+	}
 }
 /* Home Posts */
 .home #content #posts-section .post-item,
