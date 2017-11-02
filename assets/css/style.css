@@ -615,11 +615,13 @@ p {
 }
 #section-container .section {
 	padding-bottom: 2em;
+	background-size: cover;
 }
 #section-container section {
 	z-index: 10;
 	margin-left: -15px;
-    margin-right: -15px;
+	margin-right: -15px;
+	background-size: cover;	
 }
 #section-container .section.no-pad-bottom {
 	margin-bottom: 0;
