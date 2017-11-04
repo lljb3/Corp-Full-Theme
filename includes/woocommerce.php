@@ -19,33 +19,29 @@
 	add_action( 'after_setup_theme', 'woocommerce_support' );
     // WooCommerce Extra Feature (e.g.:[product_categories_dropdown orderby="title" count="0" hierarchical="0"])
     function woo_product_categories_dropdown( $atts ) {
-    extract(shortcode_atts(array(
-        'count'         => '0',
-        'hierarchical'  => '0',
-        'orderby' 	    => ''
+        extract(shortcode_atts(array(
+            'show_count'    => '0',
+            'hierarchical'  => '0',
+            'orderby'       => ''
         ), $atts));
-
         ob_start();
-        
             $c = $count;
             $h = $hierarchical;
             $o = ( isset( $orderby ) && $orderby != '' ) ? $orderby : 'order';
             // Stuck with this until a fix for http://core.trac.wordpress.org/ticket/13258
-            woocommerce_product_dropdown_categories( $c, $h, 0, $o );
+            wc_product_dropdown_categories( $c, $h, 0, $o );
             ?>
                 <script type='text/javascript'>
                     /* <![CDATA[ */
-                        var product_cat_dropdown = document.getElementById("dropdown_product_cat");
-                        function onProductCatChange() {
-                            if ( product_cat_dropdown.options[product_cat_dropdown.selectedIndex].value !=='' ) {
-                                location.href = "<?php echo home_url(); ?>/?product_cat="+product_cat_dropdown.options[product_cat_dropdown.selectedIndex].value;
+                        var product_cat_dropdown = jQuery(".dropdown_product_cat");
+                        product_cat_dropdown.change(function() {
+                            if ( product_cat_dropdown.val() !=='' ) {
+                                location.href = "<?php echo home_url(); ?>/?product_cat="+product_cat_dropdown.val();
                             }
-                        }
-                        product_cat_dropdown.onchange = onProductCatChange;
+                        });
                     /* ]]> */
                 </script>
             <?php
-
         return ob_get_clean();
     }
     add_shortcode( 'product_categories_dropdown', 'woo_product_categories_dropdown' );
