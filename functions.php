@@ -94,6 +94,9 @@
 			
 	/* Register Custom Navigation Walker */
 	require_once('includes/bootstrap-navwalker.php');
+
+	/* WooCommerce Functions */
+	require_once('includes/woocommerce.php');
 	
 	/* Other Theme Functions */
 	require_once('includes/others.php');
