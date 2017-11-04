@@ -68,11 +68,11 @@ $trans_page_opt = get_post_meta($post->ID,'page_options_trans-header',true);
                 <div class="down-arrow">
                     <?php $scrdwnimg = $kake_theme_option['scroll-down-icon-image']['url']; $scrdwnicon = $kake_theme_option['scroll-down-icon-html']; $scrdwntxt = $kake_theme_option['scroll-down-text']; $scrdwnline = $kake_theme_option['scroll-down-line']; ?>
                     <?php if( !empty( $scrdwnimg ) && empty( $scrdwnicon ) ) { ?>
-                        <a href="#content" data-scroll><img src="<?php echo $scrdwnimg ?>" alt="" /></a><br />
+                        <a href="#section-container" data-scroll><img src="<?php echo $scrdwnimg ?>" alt="" /></a><br />
                     <?php } elseif( !empty( $scrdwnicon ) ) { ?>
-                        <a href="#content" data-scroll><i class="<?php echo $scrdwnicon ?>"></i></a>
+                        <a href="#section-container" data-scroll><i class="<?php echo $scrdwnicon ?>"></i></a>
                     <?php } if( !empty( $scrdwntxt ) ) { ?>
-                        <a href="#content" class="scroll-text" data-scroll><span><?php echo $scrdwntxt; ?></span></a><br />
+                        <a href="#section-container" class="scroll-text" data-scroll><span><?php echo $scrdwntxt; ?></span></a><br />
                     <?php } if( ( $scrdwnline ) ) { ?>
                         <span class="line"></span>
                     <?php } ?>
