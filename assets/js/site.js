@@ -7,7 +7,7 @@
 			'plugins': '/wp-content/themes/corp-full-theme/assets/js/lib/plugins.min',
 		},
 		shim: {
-			'scrollreveal': {
+			'rellax': {
 				deps: ['jquery'],
 			}
 		},
