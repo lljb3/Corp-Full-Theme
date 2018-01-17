@@ -4,13 +4,11 @@
 	/* Theme Required Plugins */
 	function kaketheme_require_plugins() {
 		$plugins = array( /* The array to install plugins */ 
-			/*
 			array(
-				'name'      => 'WR Page Builder',
-				'slug'      => 'wr-pagebuilder',
-				'required'  => false,
+				'name'      => 'Fusion Page Builder',
+				'slug'      => 'fusion',
+				'required'  => true,
 			),
-			*/
 			array(
 				'name'      => 'Bootstrap 3 Shortcodes',
 				'slug'      => 'bootstrap-3-shortcodes',
