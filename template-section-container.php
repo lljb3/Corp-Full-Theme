@@ -19,9 +19,9 @@
 	 * @subpackage 	Starkers
 	 * @since 		Starkers 4.0
 	 */
-global $kake_theme_option; 
-$trans_opt = $kake_theme_option['transitional-header-button'];
-$trans_page_opt = get_post_meta($post->ID,'page_options_trans-header',true);
+    global $kake_theme_option; 
+    $trans_opt = $kake_theme_option['transitional-header-button'];
+    $trans_page_opt = get_post_meta($post->ID,'page_options_trans-header',true);
 ?>
 <?php if ( $trans_page_opt == 1 ) { ?> 
     <?php if ( $kake_theme_option['transitional-header-button'] ) { ?>
