@@ -201,7 +201,8 @@ p {
 }
 #header-menu #header-menu-table-cell,
 #trans-menu #header-menu-table-cell {
-	display: table-cell;
+	display: flex !important;
+	align-items: center;
 }
 .navbar-brand {
     margin: 12px 0;
@@ -336,13 +337,13 @@ p {
 	padding: 0px;
 }
 .navbar-nav a {
-	padding: 27px .65em !important;
+	padding: 0 .65em !important;
 	text-shadow: none !important;
 	-moz-text-shadow: none !important;
 	-webkit-text-shadow: none !important;
 }
 .navbar-nav .menu-item:last-child a {
-	padding: 27px 0px 27px .65em !important;
+	padding: 0 0 0 .65em !important;
 }
 .navbar-nav a:hover,.navbar-nav a:focus {
 	background: none !important;
@@ -361,6 +362,8 @@ p {
 }
 .menu.hidden-xs .navbar-collapse.collapse {
     padding-right: 0;
+    min-height: 50px;
+    margin: 12px 0;
 }
 .menu.hidden-xs .navbar-nav .fa {
 	padding: 0px !important;
@@ -369,6 +372,11 @@ p {
 }
 .menu.hidden-xs .navbar-nav .menu-phone {
     padding-left: .65em;
+}
+.menu.visible-xs .navbar-brand {
+    max-width: 80%;
+    display: flex;
+    align-items: center;
 }
 .menu.visible-xs .navbar-nav {
 	padding: 0px !important;
