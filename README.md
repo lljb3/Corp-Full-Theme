@@ -5,7 +5,7 @@ Currently on version: 3.7! 4 is being worked on!
 
 ## What's coming in 4?
 
-1. Update to Bootstrap 4!
+1. Update to Bootstrap 4 and PHP 7.2 optimization!
 
 2. Switch from RequireJS to Webpack!
 
@@ -17,7 +17,7 @@ Currently on version: 3.7! 4 is being worked on!
 
 2. Better RequireJS script loading! Now script shims are being loaded properly and thru async, causing better page speed scores all around.
 
-3. Fusion Page Builder! Make sure to turn off Bootstrap loading within the Fusion plugin's settings.
+3. Fusion Page Builder! Make sure to turn off Bootstrap loading within the Fusion plugin's settings. It is also now recommended instead of required to install this or Bootstrap 3 Shortcodes.
 
 ## What's new in 3.6.1?
 
