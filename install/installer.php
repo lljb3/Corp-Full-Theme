@@ -7,12 +7,12 @@
 			array(
 				'name'      => 'Fusion Page Builder',
 				'slug'      => 'fusion',
-				'required'  => true,
+				'required'  => false,
 			),
 			array(
 				'name'      => 'Bootstrap 3 Shortcodes',
 				'slug'      => 'bootstrap-3-shortcodes',
-				'required'  => true,
+				'required'  => false,
 			),
 			array(
 				'name'      => 'Jetpack',
