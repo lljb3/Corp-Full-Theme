@@ -1,13 +1,23 @@
 # Corp-Full-Theme
 Kake Multimedia's WordPress theme for corporations and small businesses.
 
-Currently on version: 3.6.3! 3.7 coming soon!
+Currently on version: 3.7! 4 is being worked on!
 
-## What's coming in 3.7?
+## What's coming in 4?
+
+1. Update to Bootstrap 4!
+
+2. Switch from RequireJS to Webpack!
+
+3. Streamline the way to include a custom post type in your child theme!
+
+## What's new in 3.7?
 
 1. Functionality to add sections to a page. Makes for building a one page site more streamlined!
 
-2. Better RequireJS script loading!
+2. Better RequireJS script loading! Now script shims are being loaded properly and thru async, causing better page speed scores all around.
+
+3. Fusion Page Builder! Make sure to turn off Bootstrap loading within the Fusion plugin's settings.
 
 ## What's new in 3.6.1?
 
