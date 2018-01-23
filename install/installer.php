@@ -10,6 +10,11 @@
 				'required'  => false,
 			),
 			array(
+				'name'      => 'Fusion: Extension - Image',
+				'slug'      => 'fusion-extension-image',
+				'required'  => false,
+			),
+			array(
 				'name'      => 'Bootstrap 3 Shortcodes',
 				'slug'      => 'bootstrap-3-shortcodes',
 				'required'  => false,
