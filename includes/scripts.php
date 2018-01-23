@@ -15,7 +15,7 @@
 		}
 		wp_localize_script( 'requirejs', 'require', array(
 			'baseUrl' => $app_base,
-			'deps' => array( $app_base . '/site.js')
+			'deps' => array( $app_base . '/site.min.js')
 		));
 
         /* Theme CSS */
