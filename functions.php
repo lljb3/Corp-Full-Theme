@@ -100,14 +100,3 @@
 	
 	/* Other Theme Functions */
 	require_once('includes/others.php');
-
-	/* Fusion Page Builder or Bootstrap 3 Shortcodes? */
-	if( is_plugin_active('fusion/fusion-core.php') || 
-		is_plugin_active('fusion-extension-image/fusion-extension-image.php') 
-	) {
-		add_action('update_option_active_plugins', 'deactivate_b3s');
-	}
-	register_activation_hook( __FILE__, 'install_premium_version' );
-	function deactivate_lite_version(){
-		deactivate_plugins('bootstrap-3-shortcodes/bootstrap-shortcodes.php');
-	}
