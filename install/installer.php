@@ -80,6 +80,16 @@
 				'required'  => true,
 			),
 			array(
+				'name'      => 'WP Smush',
+				'slug'      => 'wp-smushit',
+				'required'  => true,
+			),
+			array(
+				'name'      => 'Yoast SEO',
+				'slug'      => 'wordpress-seo',
+				'required'  => true,
+			),
+			array(
 				'name'      => 'WooCommerce',
 				'slug'      => 'woocommerce',
 				'required'  => false,
