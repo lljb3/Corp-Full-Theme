@@ -3,8 +3,8 @@
 	// Require.JS
 	requirejs.config({
 		paths: {
-			'angular': '/wp-content/themes/corp-full-theme/assets/js/lib/angular.min',
 			'plugins': '/wp-content/themes/corp-full-theme/assets/js/lib/plugins.min',
+			'enquire': '/wp-content/themes/corp-full-theme/assets/js/lib/enquire.min',
 		},
 		shim: {
 			'rellax': {
@@ -15,7 +15,7 @@
 	if (typeof jQuery === 'function') {
 		define('jquery', function () { return jQuery; });
 	}
-	requirejs(['angular','plugins'], function() {
+	requirejs(['plugins'], function() {
 		
 		// Global Vars
 		var windowHeight = $(window).innerHeight();
