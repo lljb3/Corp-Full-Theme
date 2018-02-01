@@ -53,7 +53,7 @@ body {
 	cursor: default;
 	padding: 0 !important;
 	font-size: 16.5px;
-	line-height: 1.42;
+	line-height: 1.45;
 	text-shadow: none;
 	-moz-text-shadow: none;
 	-webkit-text-shadow: none;
@@ -62,8 +62,8 @@ body {
 }
 h1,h2,h3,h4,h5,h6 {
 	display: inline-block; 
-	width: 100%; 
-	text-transform: none !important;
+	width: 100%;
+	line-height: 1.45;
 }
 h1 { font-size: 3em; }
 h2 { font-size: 2em; }
@@ -820,6 +820,7 @@ p {
 .comment-form .submit {
 	border: none !important;
 }
+
 
 /* Footer Info */
 #footer-container {
