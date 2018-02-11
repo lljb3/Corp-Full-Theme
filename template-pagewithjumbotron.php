@@ -82,7 +82,7 @@
     <!-- end .slider-text --></div>
     <?php $jumboimg = wp_get_attachment_url( get_post_thumbnail_id() ); ?>
     <div class="slider">
-        <?php $slidername = get_post_meta($post->ID, "layer_slider_post_class", true); ?>
+        <?php $slidername = get_post_meta($post->ID, 'slidermeta-slug', true); ?>
         <?php if( !empty( $slidername ) ) { layerslider($slidername); } else { echo '<div class="jumbotron-img" style="background-image:url(' . $jumboimg . ');"></div>'; } ?>
     <!-- end .slider --></div>
     <div class="slider-wash"></div>
