@@ -1,4 +1,3 @@
-
 <?php
 	global $kake_theme_option;
 	if ( !empty( $kake_theme_option['logo-menu'] ) ) {

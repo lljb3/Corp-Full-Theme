@@ -1,4 +1,3 @@
-
 <?php 
 	global $kake_theme_option;
 	$copyright = $kake_theme_option['copyright'];
