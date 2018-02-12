@@ -1,4 +1,3 @@
-
 <?php
 	global $kake_theme_option;
 	if ( !empty( $kake_theme_option['logo-menu'] ) ) {
@@ -82,7 +81,7 @@
                         <ul class="navbar-nav nav">
                             <?php if( !empty( $chat ) ) { 
                                 echo '<script type="text/javascript">' . $chat . '</script>';
-                                echo '<li class="menu-chat menu-item"><a title="Chat" onclick="' . $chat_click . '"><i class="fa fa-comments-o" aria-hidden="true"></a></i></li>'; 
+                                echo '<li class="menu-chat menu-item"><a title="Chat" onclick="' . $chat_click . '"><i class="fa fa-comments-o" aria-hidden="true"></i></a></li>'; 
                             } ?>
                             <?php if( !empty( $phone ) ) { 
                                 echo '<li class="menu-phone menu-item"><a title="Call" href="tel:' . $phone . '"><i class="fa fa-mobile" aria-hidden="true" ></i></a></li>'; 
