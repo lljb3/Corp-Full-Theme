@@ -50,7 +50,7 @@
 	
 	======================================================================================================================== */
 
-	add_action( 'wp_enqueue_scripts', 'starkers_script_enqueuer', 999999 );
+	add_action( 'wp_enqueue_scripts', 'starkers_script_enqueuer', 500, 1 );
 	add_filter( 'body_class', array( 'Starkers_Utilities', 'add_slug_to_body_class' ) );
 
 	/* ========================================================================================================================
