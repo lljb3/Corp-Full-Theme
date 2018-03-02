@@ -119,6 +119,46 @@
 					<!-- end .row --></div>
 				<!-- end #section --></section>
 			<?php endwhile; ?>
+            <?php if( $kake_theme_option['content-posts-container'] ) { ?>
+                <!-- Blog Section Info -->
+                <section class="container-fluid section" id="blog-section">                
+                    <div class="row" id="posts-section">
+                        <?php // Display blog posts on any page @ http://m0n.co/l
+                        $temp = $wp_query; $wp_query = null;
+                        $postsno = $kake_theme_option['blog-posts-number-of'];
+                        $cat_array = $kake_theme_option['blog-posts-category'];
+                        $categories = str_replace(', ','+',$cat_array);
+                        $wp_query = new WP_Query(); $wp_query->query('showposts=' . $postsno . '&paged='. $paged . '&category_name=' . $categories);
+                        while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
+                        <?php if( $postsno == 4 || $postsno == 8 ) { ?>
+                            <div class="col-md-3">
+                        <?php } else { ?>
+                            <div class="col-md-4">
+                        <?php } ?>
+                            <div class="post-item">
+                                <?php $feat_image_url = wp_get_attachment_url( get_post_thumbnail_id() ); ?>
+                                <div class="post-thumbnail" <?php if ( has_post_thumbnail() ) { echo 'style="background-image:url(' . $feat_image_url . ');opacity:.3;"'; } ?>></div>
+                                <h3 class="has-title">
+                                    <a href="<?php the_permalink(); ?>" title="Read more"><?php the_title(); ?></a>
+                                <!-- end .has-title --></h3>
+                                <?php global $more; $more = 0; ?>
+                                <div class="has-text">
+                                    <div class="category text-accent">
+                                        <span class="pull-left"><?php the_category(', '); ?> -</span>
+                                        <span class="pull-left">&nbsp;<?php wp_days_ago_v3(); ?> -</span>
+                                        <span class="pull-left">&nbsp;<?php comments_popup_link('0 Comments', '1 Comment', '% Comments'); ?></span>
+                                    <!-- end .category --></div>
+                                    <div class="post">
+                                        <a href="<?php the_permalink(); ?>" title="Read more" class="btn btn-success btn-sm read-more">Read More</a>
+                                    <!-- end .post --></div>
+                                <!-- end .has-text --></div>
+                            <!-- end .post-item --></div>
+                        <!-- end .col-md-4 --></div>
+                        <?php endwhile; ?>
+                        <?php wp_reset_postdata(); ?>
+                    <!-- end .row --></div>
+                <!-- end #section --></section>
+            <?php } ?>
         <!-- end .col-md-12 --></div>
     <!-- end .row --></div>
 <!-- end #content --></main>
