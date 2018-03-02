@@ -121,7 +121,7 @@
 			<?php endwhile; ?>
             <?php if( $kake_theme_option['content-posts-container'] ) { ?>
                 <!-- Blog Section Info -->
-                <section class="container-fluid section" id="blog-section">                
+                <section class="container-fluid section" id="blog-section">
                     <div class="row" id="posts-section">
                         <?php // Display blog posts on any page @ http://m0n.co/l
                         $temp = $wp_query; $wp_query = null;
