@@ -1,7 +1,7 @@
 # Corp-Full-Theme
 Kake Multimedia's WordPress theme for corporations and small businesses.
 
-Currently on version: 3.7! 4 is being worked on!
+Currently on version: 3.7.1! 4 is being worked on!
 
 ## What's coming in 4?
 
@@ -10,6 +10,10 @@ Currently on version: 3.7! 4 is being worked on!
 2. Switch from RequireJS to Webpack!
 
 3. Streamline the way to include a custom post type in your child theme!
+
+## What's new in 3.7.1?
+
+1. Fixed enlarged text issue in JavaScript and added proper ID tags to the navbar div that wasn't being called in the theme.
 
 ## What's new in 3.7?
 
