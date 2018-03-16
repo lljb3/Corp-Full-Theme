@@ -21,7 +21,7 @@
                             <img src="<?php echo $logo; ?>" alt="" class="img-responsive" id="header-menu-table-cell">
                         <?php } ?>
                     <!-- end .navbar-brand --></a>
-                    <div class="navbar-collapse collapse pull-right">
+                    <div class="navbar-collapse collapse pull-right" id="header-menu-table-cell">
                         <?php wp_nav_menu( 
                             array(
                                 'theme_location' => 'primary',

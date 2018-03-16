@@ -65,9 +65,9 @@
 		$('body').flowtype({
 			minimum   : 425,
 			maximum   : 1440,
-			minFont   : 14,
+			minFont   : 16.5,
 			maxFont   : 72,
-			fontRatio : 30
+			fontRatio : 80
 		});
 			
 		// Height to Viewport
