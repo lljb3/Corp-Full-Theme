@@ -11,6 +11,14 @@ Currently on version: 3.7! 4 is being worked on!
 
 3. Streamline the way to include a custom post type in your child theme!
 
+## What's new in 3.7.1?
+
+1. Updated missing FlowtypeJS font ratio to work correctly for font sizing.
+
+2. Updated trans-header.php to make sure navigation is in the middle of the header.
+
+3. Styling updates across the board.
+
 ## What's new in 3.7?
 
 1. Functionality to add sections to a page. Makes for building a one page site more streamlined!

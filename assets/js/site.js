@@ -67,7 +67,7 @@
 			maximum   : 1440,
 			minFont   : 14,
 			maxFont   : 72,
-			fontRatio : 30
+			fontRatio : 80
 		});
 			
 		// Height to Viewport
