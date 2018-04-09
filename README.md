@@ -3,6 +3,12 @@ Kake Multimedia's WordPress theme for corporations and small businesses.
 
 Currently on version: 3.7! 4 is being worked on!
 
+## Before Installation
+
+Please remember to only install either Bootstrap 3 Shortcodes or Fusion Page Builder by itself, never together.
+
+If installing Fusion Page Builder, go to the plugin's file and comment out line 131 in <em>/includes/js/fusion-core.js</em>.
+
 ## What's coming in 4?
 
 1. Update to Bootstrap 4 and PHP 7.2 optimization!
