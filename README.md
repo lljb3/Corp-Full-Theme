@@ -13,7 +13,11 @@ Currently on version: 3.7.1! 4 is being worked on!
 
 ## What's new in 3.7.1?
 
-1. Fixed enlarged text issue in JavaScript and added proper ID tags to the navbar div that wasn't being called in the theme.
+1. Updated missing FlowtypeJS font ratio to work correctly for font sizing.
+
+2. Updated trans-header.php to make sure navigation is in the middle of the header.
+
+3. Styling updates across the board.
 
 ## What's new in 3.7?
 
