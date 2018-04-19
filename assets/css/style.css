@@ -355,10 +355,10 @@ p {
 	background: none !important;
 }
 .navbar-nav .menu-item a {
-	transition: all .2s ease-in-out;
+	transition: color .2s ease-in-out;
 }
 .navbar-nav .menu-item a:hover {
-	transition: all .2s ease-in-out;
+	transition: color .2s ease-in-out;
 }
 .menu.hidden-xs .navbar-collapse.collapse {
     padding-right: 0;
