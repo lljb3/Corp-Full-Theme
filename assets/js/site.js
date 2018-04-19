@@ -63,11 +63,11 @@
 
 		// Flowtype
 		$('body').flowtype({
-			minimum   : 425,
-			maximum   : 1440,
+			minimum   : 320,
+			maximum   : 2560,
 			minFont   : 14,
 			maxFont   : 72,
-			fontRatio : 80
+			fontRatio : 81
 		});
 			
 		// Height to Viewport
