@@ -67,9 +67,6 @@
 
 		// Flowtype
 		$('body').flowtype({
-			minimum   : 425,
-			maximum   : 1440,
-			minFont   : 16.5,
 			minimum   : 320,
 			maximum   : 2560,
 			minFont   : 14,
