@@ -371,6 +371,16 @@ if (!class_exists('Redux_Framework_sample_config')) {
 					),
 					// Trans Header Options
 					array(
+						'id'        => 'trans-header-logo',
+						'type'      => 'media',
+						'hidden' => ($kakeoptions['transitional-header-button'] == 0) ? true : false,
+						'title'     => __('Transitional Logo', 'redux-framework-demo'),
+						'compiler'  => 'true',
+						'mode'      => false, // Can be set to false to allow any media type, or can also be set to any mime type.
+						'desc'      => __('Image will be displayed at 50% width & height for Retina-Ready purpose. For example: 300x60 image shows at 150x30. <br /> Also, Max. height: 50px. Upload your logo accordingly.', 'redux-framework-demo'),
+						'subtitle'  => __('', 'redux-framework-demo'),
+					),
+					array(
 						'id'   => 'color-trans-header-border',
 						'type' => 'border',
 						'hidden' => ($kakeoptions['transitional-header-button'] == 0) ? true : false,
@@ -417,7 +427,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'transparent'	=> false,
 					),
 					array(
-						'id'	=> 'typography-header',
+						'id'	=> 'typography-trans-header',
 						'type'	=> 'typography',
 						'hidden' => ($kakeoptions['transitional-header-button'] == 0) ? true : false,
 						'title'	=> __('Typography Trans Header', 'redux-framework-demo'),

@@ -2,6 +2,9 @@
 	global $kake_theme_option;
 	if ( !empty( $kake_theme_option['logo-menu'] ) ) {
 		$logo = $kake_theme_option['logo-menu']['url'];
+    }
+    if ( !empty( $kake_theme_option['trans-header-logo'] ) ) {
+		$trans_logo = $kake_theme_option['trans-header-logo']['url'];
 	}
     $chat = $kake_theme_option['site-header-chat'];
     $phone = $kake_theme_option['site-header-phone'];
@@ -14,11 +17,12 @@
             <div class="col-md-10 col-md-offset-1" id="header-menu-table">
                 <!-- Large Menu -->
                 <div class="menu center-block hidden-xs" id="header-menu-table-row">
-                    <a href="<?php echo esc_url( home_url('/') ); ?>" class="navbar-brand pull-left" id="header-menu-table-cell">
+                <a href="<?php echo esc_url( home_url('/') ); ?>" class="navbar-brand pull-left" id="header-menu-table-cell">
                         <?php if( empty( $logo ) ) { ?>
                             <span><?php bloginfo('name'); ?></span>
                         <?php } else { ?>
-                            <img src="<?php echo $logo; ?>" alt="" class="img-responsive" id="header-menu-table-cell">
+                            <img src="<?php echo $trans_logo; ?>" alt="<?php bloginfo('name'); ?>" class="img-responsive trans-logo active" id="header-menu-table-cell">
+                            <img src="<?php echo $logo; ?>" alt="<?php bloginfo('name'); ?>" class="img-responsive regular-logo hidden" id="header-menu-table-cell">
                         <?php } ?>
                     <!-- end .navbar-brand --></a>
                     <div class="navbar-collapse collapse pull-right" id="header-menu-table-cell">
@@ -53,7 +57,8 @@
                             <?php if( empty( $logo ) ) { ?>
                                 <span><?php bloginfo('name'); ?></span>
                             <?php } else { ?>
-                                <img src="<?php echo $logo; ?>" alt="" class="img-responsive">
+                                <img src="<?php echo $trans_logo; ?>" alt="<?php bloginfo('name'); ?>" class="img-responsive trans-logo active">
+                                <img src="<?php echo $logo; ?>" alt="<?php bloginfo('name'); ?>" class="img-responsive regular-logo hidden">
                             <?php } ?>
                         <!-- end .navbar-brand --></a>
                         <button type="button" class="navbar-toggle pull-right collapsed" data-toggle="collapse" data-target="#navbar-collapse">

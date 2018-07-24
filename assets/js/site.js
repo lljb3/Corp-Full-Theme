@@ -38,9 +38,13 @@
 		$(document).on('scroll',function(){
 			if($(document).scrollTop() > 300){
 				$('#trans-menu').removeClass('large').addClass('small');
+				$('.trans-logo').removeClass('active').addClass('hidden');
+				$('.regular-logo').removeClass('hidden').addClass('active');
 			} 
 			else{
 				$('#trans-menu').removeClass('small').addClass('large');
+				$('.trans-logo').removeClass('hidden').addClass('active');
+				$('.regular-logo').removeClass('active').addClass('hidden');
 			}
 		});
 
@@ -66,8 +70,11 @@
 			minimum   : 425,
 			maximum   : 1440,
 			minFont   : 16.5,
+			minimum   : 320,
+			maximum   : 2560,
+			minFont   : 14,
 			maxFont   : 72,
-			fontRatio : 80
+			fontRatio : 81
 		});
 			
 		// Height to Viewport
