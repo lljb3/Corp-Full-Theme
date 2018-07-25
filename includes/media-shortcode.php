@@ -1,21 +1,6 @@
 <?php
-	/* Media Shortcode Modify */
-	add_filter('the_content', 'addlightboxrel_replace');
-	function addlightboxrel_replace ($content) {
-		global $post;
-		$postid = get_post_gallery( get_the_ID(), false );
-		$pattern = "/<a(.*?)href=('|\")(.*?).(bmp|gif|jpeg|jpg|png)('|\")(.*?)>/i";
-		$replacement = '<a$1href=$2$3.$4$5 rel="prettyPhoto[%LIGHTID%]"$6>';
-		$content = preg_replace($pattern, $replacement, $content);
-		$content = str_replace("%LIGHTID%", $postid, $content);
-		return $content;
-	}
-	function add_class_attachment_link($html){
-		$postid = get_post_gallery( get_the_ID(), false );
-		$html = str_replace('<a', '<a rel="prettyPhoto"', $html);
-		return $html;
-	}
-	add_filter('wp_get_attachment_link','addlightboxrel_replace',10,1);
+	/* Custom Gallery Size Addition */
+	add_image_size( 'gallery-thumb', 400, 400, array( 'center', 'center' ) );
 	// Custom filter function to modify default gallery shortcode output
 	function my_post_gallery( $output, $attr ) {
 		// Initialize
@@ -37,7 +22,7 @@
 			'icontag'    => 'dt',
 			'captiontag' => 'dd',
 			'columns'    => 6,
-			'size'       => 'thumbnail',
+			'size'       => 'gallery-thumb',
 			'include'    => '',
 			'exclude'    => ''
 		), $attr ) );
@@ -84,9 +69,10 @@
 		$i = 0;
 		foreach ( $attachments as $id => $attachment ) {
 			// Attachment link
-			$link = isset( $attr['link'] ) && 'file' == $attr['link'] ? wp_get_attachment_link( $id, $size, false, false ) : wp_get_attachment_link( $id, $size, true, false ); 	 
+			$link = isset( $attr['link'] ) && 'file' == $attr['link'] ? wp_get_attachment_link( $id, $size, false, false ) : wp_get_attachment_link( $id, $size, true, false );
+			$link = str_replace('<a href', '<a rel="prettyPhoto[gal-'. $post->ID .']" alt="'. wptexturize($attachment->post_excerpt).'" title="'. wptexturize($attachment->post_excerpt) .'" href', $link);
 			// Start itemtag
-			$output .= "<{$itemtag} class='gallery-item col-md-2 col-xs-6'>";	 
+			$output .= "<{$itemtag} class='gallery-item col-md-4 col-xs-12'>";	 
 			// icontag
 			$output .= "
 			<{$icontag} class='gallery-icon'>
