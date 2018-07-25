@@ -1,7 +1,7 @@
 # Corp-Full-Theme
 Kake Multimedia's WordPress theme for corporations and small businesses.
 
-Currently on version: 3.7.1! 4 is being worked on!
+Currently on version: 3.7.2! 4 is being worked on!
 
 ## Before Installation
 
@@ -16,6 +16,14 @@ If installing Fusion Page Builder, go to the plugin's file and comment out line 
 2. Switch from RequireJS to Webpack!
 
 3. Streamline the way to include a custom post type in your child theme!
+
+## What's new in 3.7.2?
+
+1. Tested PHP 7.2! All sites should be at least 7.1 but preferably 7.2!
+
+2. Updated Layerslider and recommended plugin list.
+
+3. Styling updates across the board.
 
 ## What's new in 3.7.1?
 
