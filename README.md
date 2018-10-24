@@ -5,9 +5,11 @@ Currently on version: 3.7.2! 4 is being worked on!
 
 ## Before Installation
 
-Please remember to only install either Bootstrap 3 Shortcodes or Fusion Page Builder by itself, never together.
+Please remember to only install Fusion Page Builder.
 
-If installing Fusion Page Builder, go to the plugin's file and comment out line 131 in <em>/includes/js/fusion-core.js</em>.
+When installing Fusion Page Builder, go to the plugin's file and comment out line 131 in <em>/includes/js/fusion-core.js</em>.
+
+Also make sure you go into Fusion's settings and uncheck "Enable Boostrap" in Settings > Fusion.
 
 ## What's coming in 4?
 
