@@ -17,6 +17,16 @@ If installing Fusion Page Builder, go to the plugin's file and comment out line 
 
 3. Streamline the way to include a custom post type in your child theme!
 
+## What's new in 3.8?
+
+1. Added WP Smush Pro, we're no longer using the regular version of Smush. Now we can upload any size images we want and Smush Pro will optimize them all!
+
+2. Added the newest WP Rocket.
+
+3. Removed Bootstrap 3 Shortcodes. It is no longer recommended to use that plugin on this theme.
+
+4. Updated the recommended plugin list.
+
 ## What's new in 3.7.2?
 
 1. Tested PHP 7.2! All sites should be at least 7.1 but preferably 7.2!
