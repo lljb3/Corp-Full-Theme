@@ -3,8 +3,8 @@
 	// Require.JS
 	requirejs.config({
 		paths: {
-			'plugins': '/wp-content/themes/corp-full-theme/assets/js/lib/plugins.min',
-			'enquire': '/wp-content/themes/corp-full-theme/assets/js/lib/enquire.min',
+			'plugins': '/wp-content/themes/Corp-Full-Theme/assets/js/lib/plugins.min',
+			'enquire': '/wp-content/themes/Corp-Full-Theme/assets/js/lib/enquire.min',
 		},
 		shim: {
 			'rellax': {
