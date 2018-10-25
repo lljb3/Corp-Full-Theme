@@ -39,7 +39,6 @@
                         <ul class="navbar-nav nav">
                             <?php if( !empty( $chat ) ) { 
                                 echo '<script type="text/javascript">' . $chat . '</script>';
-                                echo '<script type="text/javascript" async="" src="https://oggchat3.icoa.com/js/oggwindow.js"></script>';
                                 echo '<li class="menu-chat menu-item"><a title="Chat" onclick="' . $chat_click . '"><i class="fa fa-comments-o" aria-hidden="true"></i></a></li>'; 
                             } ?>
                             <?php if( !empty( $phone ) ) { 
@@ -82,7 +81,6 @@
                         <ul class="navbar-nav nav">
                             <?php if( !empty( $chat ) ) { 
                                 echo '<script type="text/javascript">' . $chat . '</script>';
-                                echo '<script type="text/javascript" async="" src="https://oggchat3.icoa.com/js/oggwindow.js"></script>';
                                 echo '<li class="menu-chat menu-item"><a title="Chat" onclick="' . $chat_click . '"><i class="fa fa-comments-o" aria-hidden="true"></i></a></li>'; 
                             } ?>
                             <?php if( !empty( $phone ) ) { 
