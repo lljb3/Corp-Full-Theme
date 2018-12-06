@@ -1,14 +1,9 @@
 <?php
-    /*
-    Template Name: Template - Jumbotron Page
-    */
-?>
-
-<?php
     /**
-     * The template for displaying all pages.
+     * Template Name: 02 - Jumbotron
      *
-     * This is the template that displays all pages by default.
+     * This is the template that displays a page with
+     * a full screen hero area by default.
      * Please note that this is the WordPress construct of pages
      * and that other 'pages' on your WordPress site will use a
      * different template.

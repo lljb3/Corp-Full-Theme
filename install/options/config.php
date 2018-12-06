@@ -1011,7 +1011,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 					array(
 						'id' => 'color-blog-posts-background',
 						'type'	=> 'background',
-						'output' => array('.home #content #posts-section .post-item,.page-template-template-frontpage #content #posts-section .post-item'),
+						'output' => array('.home #content #posts-section .post-item,.page-template-01-home #content #posts-section .post-item'),
 						'title'	=> __('Blog Post Background', 'redux-framework-demo'),
 						'subtitle'	=> __('Handles read more image background color wash (default: #333)', 'redux-framework-demo'),
 						'default'	=> array( 'background-color' => '#333' ),
@@ -1029,7 +1029,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'subtitle'	=> __('Handles read more button border colors (default: #70b9a0)', 'redux-framework-demo'),
 						'default'	=> '#70b9a0',
 						'validate'	=> 'color',
-						'output' => array('.home #content #posts-section .post-item .has-title,.page-template-template-frontpage #content #posts-section .post-item .has-item'), // An array of CSS selectors to apply this font style to dynamically
+						'output' => array('.home #content #posts-section .post-item .has-title,.page-template-01-home #content #posts-section .post-item .has-item'), // An array of CSS selectors to apply this font style to dynamically
 						'transparent'	=> false,
 					),
 					array(
@@ -1039,7 +1039,7 @@ if (!class_exists('Redux_Framework_sample_config')) {
 						'subtitle'	=> __('Handles read more button border colors (default: #70b9a0)', 'redux-framework-demo'),
 						'default'	=> '#70b9a0',
 						'validate'	=> 'color',
-						'output' => array('.home #content #posts-section .post-item .has-title:hover,.page-template-template-frontpage #content #posts-section .post-item .has-item:hover'), // An array of CSS selectors to apply this font style to dynamically
+						'output' => array('.home #content #posts-section .post-item .has-title:hover,.page-template-01-home #content #posts-section .post-item .has-item:hover'), // An array of CSS selectors to apply this font style to dynamically
 						'transparent'	=> false,
 					),
 					array(

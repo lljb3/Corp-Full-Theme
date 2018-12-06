@@ -1,17 +1,15 @@
 <?php
-	/*
-	Template Name: Template - Home
-	*/
-?>
-
-<?php
 	/**
-	 * The template for displaying all pages.
+	 * Template Name: 01 - Home
 	 *
 	 * This is the template that displays all pages by default.
 	 * Please note that this is the WordPress construct of pages
 	 * and that other 'pages' on your WordPress site will use a
 	 * different template.
+     * 
+     * Notes: If you want to change the structure of this template,
+     * copy this to the child theme and adjust the jumbotron,
+     * content area, and blog area as necessary.
 	 *
 	 * Please see /external/starkers-utilities.php for info on Starkers_Utilities::get_template_parts()
 	 *

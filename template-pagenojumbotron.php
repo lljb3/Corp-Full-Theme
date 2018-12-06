@@ -1,14 +1,8 @@
 <?php
-    /*
-    Template Name: Template - No Jumbotron Page
-    */
-?>
-
-<?php
     /**
-     * The template for displaying all pages.
+     * Template Name: 03 - No Jumbotron
      *
-     * This is the template that displays all pages by default.
+     * This is the template that displays a regular page by default.
      * Please note that this is the WordPress construct of pages
      * and that other 'pages' on your WordPress site will use a
      * different template.
