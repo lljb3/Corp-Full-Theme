@@ -1,7 +1,7 @@
 # Corp-Full-Theme
 Kake Multimedia's WordPress theme for corporations and small businesses.
 
-Currently on version: 3.7.2! 4 is being worked on!
+Currently on version: 3.9! 4 is being worked on!
 
 ## Before Installation
 
@@ -18,6 +18,10 @@ Also make sure you go into Fusion's settings and uncheck "Enable Boostrap" in Se
 2. Switch from RequireJS to Webpack!
 
 3. Streamline the way to include a custom post type in your child theme!
+
+# What's new in 3.9?
+
+1. Updated the templates to new naming conventions.
 
 ## What's new in 3.8?
 
