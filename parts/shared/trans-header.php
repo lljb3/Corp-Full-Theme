@@ -18,7 +18,7 @@
                 <!-- Large Menu -->
                 <div class="menu center-block hidden-xs" id="header-menu-table-row">
                 <a href="<?php echo esc_url( home_url('/') ); ?>" class="navbar-brand pull-left" id="header-menu-table-cell">
-                        <?php if( empty( $logo ) ) { ?>
+                        <?php if( empty( $logo ) || empty( $trans_logo ) ) { ?>
                             <span><?php bloginfo('name'); ?></span>
                         <?php } else { ?>
                             <img src="<?php echo $trans_logo; ?>" alt="<?php bloginfo('name'); ?>" class="img-responsive trans-logo active" id="header-menu-table-cell">
