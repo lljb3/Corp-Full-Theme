@@ -3,7 +3,7 @@
 	add_image_size( 'gallery-thumb', 400, 400, array( 'center', 'center' ) );
 	// Custom filter function to modify default gallery shortcode output
 	function my_post_gallery( $output, $attr ) {
-		// Initialize
+		// Initialize 
 		global $post, $wp_locale;
 		// Gallery instance counter
 		static $instance = 0;
