@@ -8,7 +8,9 @@
 
 <!-- Custom JavaScript -->
 <?php echo $custom_scripts; ?>
+
 <!-- RequireJS -->
+<script type="text/javascript" data-main="<?php echo get_template_directory_uri(); ?>/assets/js/site.js" src="<?php echo get_template_directory_uri(); ?>/assets/js/require.js"></script>
 </body>
 
 <!-- End of Site -->

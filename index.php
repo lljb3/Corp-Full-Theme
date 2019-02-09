@@ -25,7 +25,7 @@
             <?php while ( have_posts() ) : the_post(); ?>
                 <li class="col-md-12">
                     <article class="post row">
-                        <div class="thumbnail col-md-3 col-xs-3"><?php the_post_thumbnail('large',['class'=>'img-responsive center-block']); ?></div>
+                        <div class="post-thumbnail col-md-3 col-xs-3"><?php the_post_thumbnail('large',['class'=>'img-responsive center-block']); ?></div>
                         <div class="post-inner col-md-9 col-xs-9">
                             <h2 class="post-title"><a href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
                             <time datetime="<?php the_time( 'Y-m-d' ); ?>" pubdate><?php the_date(); ?> <?php the_time(); ?></time> <?php comments_popup_link('Leave a Comment', '1 Comment', '% Comments'); ?>

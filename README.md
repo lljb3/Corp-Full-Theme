@@ -7,7 +7,7 @@ Currently on version: 3.9! 4 is being worked on!
 
 Please remember to only install Fusion Page Builder.
 
-When installing Fusion Page Builder, go to the plugin's file and comment out line 131 in <em>/includes/js/fusion-core.js</em>.
+When installing Fusion Page Builder, go to the plugin's file and comment out line 121 in <em>/includes/js/fusion-core.js</em>. This is the the line that enables "fsnInitEnquireJS();" function. It stops enquire.js from being intialized, as it is not necessary for Fusion Page Builder to work for this theme.
 
 Also make sure you go into Fusion's settings and uncheck "Enable Boostrap" in Settings > Fusion.
 

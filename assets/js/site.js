@@ -3,8 +3,8 @@
 	// Require.JS
 	requirejs.config({
 		paths: {
-			'plugins': '/wp-content/themes/Corp-Full-Theme/assets/js/lib/plugins.min',
-			'enquire': '/wp-content/themes/Corp-Full-Theme/assets/js/lib/enquire.min',
+			'plugins': '/wp-content/themes/Corp-Full-Theme-3/assets/js/lib/plugins.min',
+			'enquire': '/wp-content/themes/Corp-Full-Theme-3/assets/js/lib/enquire.min',
 		},
 		shim: {
 			'rellax': {
@@ -15,7 +15,7 @@
 	if (typeof jQuery === 'function') {
 		define('jquery', function () { return jQuery; });
 	}
-	requirejs(['plugins'], function() {
+	requirejs(['plugins','enquire'], function() {
 		
 		// Global Vars
 		var windowHeight = $(window).innerHeight();
